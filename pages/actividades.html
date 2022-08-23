@@ -30,7 +30,7 @@
 
         <header class="row sticky-top">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html"><img src="../img-museo/logo-chan-chan-blanco.png" alt="logo museo" width="150px"></a>
                     <button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
 
         </header>
 
-        <section class="talleres row" style="background-color: red;">
+        <section class="talleres row">
             <div class="container my-4 p-4 px-xl-5">
                 <div class="stu-titulo px-xl-4">
                     <h2>TALLERES</h2>
@@ -74,16 +74,16 @@
                 <div id="carruseltmobile" class="carousel slide d-sm-none" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            
+                            <div class="card-wraper d-flex justify-content-center">
                                 <div class="card" style="width: 18rem;">
                                     <img src="../img-museo/niños-arqueologia-taller.jpg" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
-                                    <div class="card-body">
+                                    <div class="card-body d-flex p-4">
                                         
-                                            <div>
+                                            <div class="me-1">
                                                 <h6>DIRIGIDO A:</h6>
-                                                <p>Niños y Niñas de 8 a 12 años</p>
+                                                <p>Niños y Niñas <br> de 8 a 12 años</p>
                                             </div>
-                                            <div>
+                                            <div class="ms-2">
                                                 <h6>FECHA Y HORA:</h6>
                                                 <p>Vie 26 Ago</p>
                                                 <p>Sab 27 Ago</p>
@@ -92,46 +92,52 @@
                                         
                                     </div>
                                 </div>
-                            
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <img src="../img-museo/niños-arqueologia-taller.jpg" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
-                                <div class="card-body">
-                                    
-                                        <div>
-                                            <h6>DIRIGIDO A:</h6>
-                                            <p>Niños y Niñas de 8 a 12 años</p>
-                                        </div>
-                                        <div>
-                                            <h6>FECHA Y HORA:</h6>
-                                            <p>Vie 26 Ago</p>
-                                            <p>Sab 27 Ago</p>
-                                            <p>Dom 28 Ago</p>
-                                        </div>
-                                    
-                                </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <img src="../img-museo/niños-arqueologia-taller.jpg" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
-                                <div class="card-body">
-                                    
-                                        <div>
-                                            <h6>DIRIGIDO A:</h6>
-                                            <p>Niños y Niñas de 8 a 12 años</p>
-                                        </div>
-                                        <div>
-                                            <h6>FECHA Y HORA:</h6>
-                                            <p>Vie 26 Ago</p>
-                                            <p>Sab 27 Ago</p>
-                                            <p>Dom 28 Ago</p>
-                                        </div>
-                                    
+                            <div class="card-wraper d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img-museo/niños-arqueologia-taller.jpg" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                    <div class="card-body d-flex p-4">
+                                        
+                                            <div class="me-1">
+                                                <h6>DIRIGIDO A:</h6>
+                                                <p>Niños y Niñas <br> de 8 a 12 años</p>
+                                            </div>
+                                            <div class="ms-2">
+                                                <h6>FECHA Y HORA:</h6>
+                                                <p>Vie 26 Ago</p>
+                                                <p>Sab 27 Ago</p>
+                                                <p>Dom 28 Ago</p>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-wraper d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img-museo/niños-arqueologia-taller.jpg" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                    <div class="card-body d-flex p-4">
+                                        
+                                            <div class="me-1">
+                                                <h6>DIRIGIDO A:</h6>
+                                                <p>Niños y Niñas <br> de 8 a 12 años</p>
+                                            </div>
+                                            <div class="ms-2">
+                                                <h6>FECHA Y HORA:</h6>
+                                                <p>Vie 26 Ago</p>
+                                                <p>Sab 27 Ago</p>
+                                                <p>Dom 28 Ago</p>
+                                            </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                        
                         
                     </div>    
                     <button class="carousel-control-prev" type="button" data-bs-target="#carruseltmobile" data-bs-slide="prev">
@@ -145,8 +151,8 @@
                 </div>
 
                 <!-- CARRUSEL PANTALLAS GRANDES -->
-                <div id="carruseltxl" class="carousel slide align-items-center slide d-none d-sm-block" data-bs-ride="carousel">
-                    <div class="carousel-inner d-xl-flex">
+                <div id="carruseltxl" class="carousel slide align-items-center slide d-none d-sm-block pb-xl-5" data-bs-ride="carousel">
+                    <div class="carousel-inner d-xl-flex pb-xl-5">
                         <div class="carousel-item active">
                             <div class="cards-wrapper d-xl-flex justify-content-around">
                                 <div class="card" style="width: 18rem;">
@@ -321,12 +327,12 @@
                     </div>
                     
                     <button class="carousel-control-prev" type="button" data-bs-target="#carruseltxl" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carruseltxl" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
                     
                 </div>
@@ -341,7 +347,7 @@
                 </div>
 
                 <nav aria-label="gpaginacion row ">
-                        <ul class="pagination pagination-sm justify-content-center">
+                        <ul class="pagination pagination-sm justify-content-center align-items-center">
                             <li class="page-item"><a class="page-link" href="#"><i class="bi bi-arrow-left"></i></a></li>
                             <li class="page-item active"><a class="page-link" href="#">MOSTRAR TODOS</a></li>
                             <li class="page-item"><a class="page-link" href="#">ENERO</a></li>
@@ -375,7 +381,7 @@
             </div>
         </section>
 
-        <footer class="row" style="background-color: rgb(198, 113, 113);">
+        <footer class="row">
                 
             <div class="navfoot container py-4">
 

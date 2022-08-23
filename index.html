@@ -29,9 +29,9 @@
 
         <div class="col">
 
-            <header class="row sticky-top" style="background-color: red;">
+            <header class="row sticky-top header">
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container">
                         <a class="navbar-brand" href="./index.html"><img src="./img-museo/logo-chan-chan-blanco.png" alt="logo museo" width="150px"></a>
                         <button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
 
             </header>
 
-            <section class="shero row" style="background-color: yellow;">
+            <section class="shero row">
 
                 <div class="container-fluid hero">
 
@@ -85,7 +85,7 @@
                 <div class="mcontent col">
 
                     <!-- SECCION SIGNIFICADO CULTURAL -->
-                    <section class="maincultural row" style="background-color: orange;">
+                    <section class="maincultural row">
                         
                         <div class="contenido container my-4 p-4 px-xl-5">
                             <div class="titulo px-xl-4">
@@ -113,7 +113,7 @@
                     </section>
 
                     <!-- SECCION HISTORIA -->
-                    <section class="mainhistoria row" style="background-color: turquoise;">
+                    <section class="mainhistoria row">
                         <div class="contenido container my-4 p-4 px-xl-5">
                             
                             <div class="titulo px-xl-4">
@@ -123,7 +123,7 @@
                             
                             <div class="shcontenido d-xl-flex flex-xl-column align-items-center my-5">
                                 <div class="hbloque1 px-xl-4 d-flex flex-column flex-xl-row align-items-center">
-                                    <img class="col-xl-3 img-fluid" src="./img-museo/img-generica-rectangulo-vertical.png" alt="" height="300px">
+                                    <img class="col-xl-3 img-fluid" src="./img-museo/vista-muro-chan-chan.jpg" alt="" height="300px">
                                     <div class="hbloque1__texto my-4 ps-xl-5 offset-xl-1">
                                         <h4>Lorem, ipsum dolor sit amet consectetur adi pisicing elit. Ea culpa sed, earum et ipsum dolor</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nemo autem ipsam distinctio minima perspiciatis veniam, incidunt numquam? Nostrum magnam doloremque totam reprehenderit nulla ratione odio in libero, beatae tempora!</p>
@@ -151,10 +151,10 @@
                     </section>
 
                     <!-- SECCION INFOGRAFIAS -->
-                    <section class="maininfog row" style="background-color: pink;">
+                    <section class="maininfog row">
                         
                         <div class="contenido container my-4 p-4">
-                            <div class="row titulo px-xl-4">
+                            <div class="titulo px-xl-4">
                                 <h2>INFOGRAFÍAS</h2>
                                 <hr>
                             </div>
@@ -162,62 +162,68 @@
                             
                             <!-- CARRUSEL PANTALLAS MOBILE -->
 
-                            <div id="carruselinfmobile" class="carousel slide d-sm-none" data-bs-ride="carousel">
+                            <div id="carruselinfmobile" class="carousel slide d-sm-none my-5" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     
-                                    <div class="carousel-item active">                            
-                                        <div class="card" style="width: 18rem;">
+                                    <div class="carousel-item active">                          
+                                        <div class="card-wraper d-flex justify-content-center">
+                                            <div class="card d-flex align-items-center" style="width: 18rem;">
                                             <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
                                             <div class="card-body" style=" height:12rem ;">
                                         
-                                            <div>
-                                                <h6 class="my-2">Mapa de Expansión Territorial</h6>
+                                                <div class="descripcion">
+                                                <h5 class="my-2">Mapa de Expansión Territorial</h5>
                                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
-                                            </div>
+                                                </div>
                                         
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
-                                            <div class="card-body" style="height:12rem ;">
+                                        <div class="card-wraper d-flex justify-content-center">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                                <div class="card-body" style="height:12rem ;">
                                     
                                                 <div>
-                                                    <h6 class="my-2">Línea de Tiempo Cultural</h6>
+                                                    <h5 class="my-2">Línea de Tiempo Cultural</h5>
                                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
                                                 </div>
                                     
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
-                                <div class="card-body" style="height:12rem ;">
+                                        <div class="card-wraper d-flex justify-content-center">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                                <div class="card-body" style="height:12rem ;">
                                     
                                         <div>
-                                            <h6 class="my-2">Lorem ipsum dolor sit amet</h6>
+                                            <h5 class="my-2">Lorem ipsum dolor sit amet</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
                                         </div>
                                     
-                                </div>
-                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                         
                                 </div>    
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carruselinfmobile" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carruselinfmobile" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
 
                             <!-- CARRUSEL PANTALLAS GRANDES -->
-                            <div id="carruselinfxl" class="carousel slide align-items-center slide d-none d-sm-block" data-bs-ride="carousel">
+                            <div id="carruselinfxl" class="carousel slide my-xl-5 align-items-center slide d-none d-sm-block" data-bs-ride="carousel">
                                 <div class="carousel-inner d-xl-flex">
                                     <div class="carousel-item active">
                                         <div class="cards-wrapper d-xl-flex justify-content-around">
@@ -292,12 +298,12 @@
                                 </div>
                     
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carruselinfxl" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carruselinfxl" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
                                 </button>
                     
                             </div>
@@ -307,53 +313,72 @@
                     </section>
 
                     <!-- SECCION EXHIBICIÓN -->
-                    <section class="mainexhib row" style="background-color: coral;">
+                    <section class="mainexhib row">
                         <div class="contenido container my-4 p-4">
-                            <div class="row titulo">
+                            <div class="titulo px-xl-4">
                                 <h2>EXHIBICIONES</h2>
                                 <hr>
                             </div>
 
                             <!-- CARRUSEL PANTALLAS MOBILE -->
 
-                            <div id="carruselexhmobile" class="carousel slide d-sm-none" data-bs-ride="carousel">
+                            <div id="carruselexhmobile" class="carousel slide d-sm-none my-5" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">                            
-                                            <div class="card" style="width: 18rem;">
-                                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                            <div class="card-wraper d-flex justify-content-center">    
+                                                <div class="card" style="width: 18rem;">
+                                                <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
                                                 <div class="card-body" style=" height:12rem ;">
                                                     
                                                         <div>
-                                                            <h6 class="my-2">Mapa de Expansión Territorial</h6>
-                                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
+                                                            <h5 class="my-2">Mapa de Expansión Territorial</h5>
+                                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
+                                                            <button type="button" class="btn btn-link d-flex">
+                                                                <P>VER MÁS</P>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
                                                         </div>
+                                                        
                                                     
+                                                </div>
                                                 </div>
                                             </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                        <div class="card-wraper d-flex justify-content-center">
+                                            <div class="card" style="width: 18rem;">
+                                            <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
                                             <div class="card-body" style="height:12rem ;">
                                                 
                                                     <div>
                                                         <h6 class="my-2">Línea de Tiempo Cultural</h6>
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
+                                                            <button type="button" class="btn btn-link d-flex">
+                                                                <P>VER MÁS</P>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
                                                     </div>
                                                 
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
+                                        <div class="card-wraper d-flex justify-content-center">
+                                            <div class="card" style="width: 18rem;">
+                                            <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="..." style="height: 20rem; object-fit: cover;">
                                             <div class="card-body" style="height:12rem ;">
                                                 
                                                     <div>
                                                         <h6 class="my-2">Lorem ipsum dolor sit amet</h6>
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
+                                                            <button type="button" class="btn btn-link d-flex">
+                                                                <P>VER MÁS</P>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
                                                     </div>
                                                 
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -370,11 +395,11 @@
                             </div>
             
                             <!-- CARRUSEL PANTALLAS GRANDES -->
-                            <div id="carruselexhxl" class="carousel slide align-items-center slide d-none d-sm-block" data-bs-ride="carousel">
+                            <div id="carruselexhxl" class="carousel slide align-items-center slide d-none d-sm-block my-xl-5" data-bs-ride="carousel">
                                 <div class="carousel-inner d-xl-flex">
                                     <div class="carousel-item active">
                                         <div class="cards-wrapper d-xl-flex justify-content-around">
-                                            <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                                            <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
                                                         
@@ -382,7 +407,7 @@
                                                         <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="">
                                                             
                                                     </div>
-                                                    <div class="col-xl-5">
+                                                    <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
                                                             <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
@@ -396,13 +421,13 @@
                                                 </div>
                                             </div>
             
-                                            <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                                            <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
                                                         <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
                                                         <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="">
                                                     </div>
-                                                    <div class="col-xl-5">
+                                                    <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
                                                             <h5 class="card-title">Lorem ipsum dolor sit</h5>
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
@@ -421,13 +446,13 @@
                                     
                                     <div class="carousel-item">
                                         <div class="cards-wrapper d-xl-flex justify-content-around">
-                                            <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                                            <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
                                                         <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
                                                         <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="">
                                                     </div>
-                                                    <div class="col-xl-5">
+                                                    <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
                                                             <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
@@ -441,13 +466,13 @@
                                                 </div>
                                             </div>
             
-                                            <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                                            <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
                                                         <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
                                                         <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="">
                                                     </div>
-                                                    <div class="col-xl-5">
+                                                    <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
                                                             <h5 class="card-title">Lorem ipsum dolor sit</h5>
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
@@ -509,16 +534,16 @@
 
             </main>
 
-            <footer class="row" style="background-color: rgb(198, 113, 113);">
+            <footer class="row">
                 
-                <div class="navfoot container py-4">
+                <div class="navfoot container py-4 mb-xl-5">
 
                     <div class="row my-4 blinks d-xl-flex justify-content-center px-xl-5">
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./index.html">MUSEO</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/tours.html">TOURS</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="/pages/actividades.html">ACTIVIDADES</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/faq.html">FAQ</a>
-                        <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/contacto.html">CONTACTO</a>
+                        <a class="lfcontacto col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/contacto.html">CONTACTO</a>
                     </div>
 
                     <div class="fdatos container mt-5">
@@ -539,7 +564,7 @@
                             <article class="fs-sus col-12 col-xl-5 my-4">
             
                                 <div class="fs-txt">
-                                    <h4> Suscríbete</h4>
+                                    <h3> Suscríbete</h3>
                                     <P>Para recibir más información y novedades déjanos tu correo</P>
                                 </div>
             

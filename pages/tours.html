@@ -28,9 +28,9 @@
     <div class="container-fluid">
 
         <div class="col">
-            <header class="row sticky-top" style="background-color: red;">
+            <header class="row sticky-top">
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container">
                         <a class="navbar-brand" href="../index.html"><img src="../img-museo/logo-chan-chan-blanco.png" alt="logo museo" width="150px"></a>
                         <button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
 
             </header>
 
-            <section class="ubicacion row" style="background-color:yellow ;">
+            <section class="ubicacion row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="stu-titulo px-xl-4">
                         <h2>UBICACIÓN <br> Y HORARIOS</h2>
@@ -70,16 +70,16 @@
                     </div>
 
                     <div class="stu-contenido d-xl-flex align-items-center my-5">
-                        <div class="block1 col-12 col-xl-6">
+                        <div class="block1 col-12 col-xl-6 d-flex justify-content-center">
                             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7899.974486778466!2d-79.07453592609562!3d-8.102780254911666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smuseo%20chan%20chan!5e0!3m2!1ses!2spe!4v1659034226031!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="block2 col-12 col-xl-6">
-                            <div class="geo-icon">
+                        <div class="block2 col-12 col-xl-6 mt-5 mt-xl-0">
+                            <div class="geo-icon my-4">
                                 <i class="bi bi-geo-alt-fill"></i>
                             </div>
                             <p>VWXM+XPM, Av. Mansiche, Huanchaco 13011</p>
-                            <div class="stu-tabla">
-                                <table class="tabla-horario">
+                            <div class="stu-tabla d-flex justify-content-center">
+                                <table class="tabla-horario my-4">
                                     <thead>
                                         <tr>
                                             <th colspan="2" >HORARIOS</th>
@@ -123,7 +123,7 @@
                 </div>
             </section>
 
-            <section class="tarifas row" style="background-color: green;">
+            <section class="tarifas row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="stt-titulo px-xl-4">
                         <h2>TARIFAS</h2>
@@ -132,85 +132,81 @@
 
                     <div class="stt-contenido d-xl-flex justify-content-around my-5">
                         
-                        <table class="tarifas__tabla1">
-                            <thead>
-                                <tr>
+                        <table class="tarifas__tabla1 d-flex flex-column justify-content-center">
+                            <thead class="d-flex flex-column justify-content-center">
+                                <tr class="d-flex flex-column justify-content-center">
                                     <th class="tabla1_categ" colspan="2">PERUANOS</th>
                                 </tr>
                 
-                                <tr>
-                                    <th class="tabla1_subcateg">Edades</th>
-                                    <th class="tabla1_subcateg">Precio</th>
+                                <tr class="d-flex justify-content-center mt-4">
+                                    <th class="tabla1_subcateg px-4">Edades</th>
+                                    <th class="tabla1_subcateg px-4">Precio</th>
                                 </tr>
                             </thead>
                 
-                            <tbody>
-                                <tr>
-                                    <td>Adultos</td>
-                                    <td>S/.15</td>
+                            <tbody class="my-4">
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Adultos</td>
+                                    <td class="px-4 my-4">S/.15</td>
                                 </tr>
                 
-                                <tr>
-                                    <td>Niños</td>
-                                    <td>S/.5</td>
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Niños</td>
+                                    <td class="px-4 my-4">S/.5</td>
                                 </tr>
                 
                             </tbody>
                 
                         </table>
                 
-                        <table class="tarifas__tabla2">
-                            <thead>
-                                <tr>
-                                    <th class="tabla2_categ" colspan="2" >EXTRANJEROS</th>
+                        <table class="tarifas__tabla2 d-flex flex-column justify-content-center">
+                            <thead class="d-flex flex-column justify-content-center">
+                                <tr class="d-flex flex-column justify-content-center">
+                                    <th class="tabla1_categ" colspan="2">EXTRANJEROS</th>
                                 </tr>
                 
-                                <tr>
-                                    <th class="tabla2_subcateg">Edades</th>
-                                    <th class="tabla2_subcateg">Precio</th>
+                                <tr class="d-flex justify-content-center mt-4">
+                                    <th class="tabla1_subcateg px-4">Edades</th>
+                                    <th class="tabla1_subcateg px-4">Precio</th>
                                 </tr>
                             </thead>
                 
-                            <tbody>
-                                <tr>
-                                    <td>Adultos</td>
-                                    <td>S/.20</td>
+                            <tbody class="my-4">
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Adultos</td>
+                                    <td class="px-4 my-4">S/.15</td>
                                 </tr>
                 
-                                <tr>
-                                    <td>Niños</td>
-                                    <td>S/.10</td>
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Niños</td>
+                                    <td class="px-4 my-4">S/.5</td>
                                 </tr>
+                
                             </tbody>
+                
                         </table>
                 
-                        <table class="tarifas__tabla3">
-                            <thead>
-                
-                                <tr>
-                                    <th class="tabla3_categ" colspan="2">EXTRAS</th>
+                        <table class="tarifas__tabla3 d-flex flex-column justify-content-center">
+                            <thead class="d-flex flex-column justify-content-center">
+                                <tr class="d-flex flex-column justify-content-center">
+                                    <th class="tabla1_categ" colspan="2">EXTRAS</th>
                                 </tr>
-            
-                                <tr>
-                                    <th class="tabla3_subcateg">Categorías</th>
-                                    <th class="tabla3_subcateg">Precio</th>
+                
+                                <tr class="d-flex justify-content-center mt-4">
+                                    <th class="tabla1_subcateg px-4">Edades</th>
+                                    <th class="tabla1_subcateg px-4">Precio</th>
                                 </tr>
                             </thead>
                 
-                            <tbody>
-                                <tr>
-                                    <td>Situac. Discapacidad</td>
-                                    <td>S/.5</td>
+                            <tbody class="my-4">
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Adultos</td>
+                                    <td class="px-4 my-4">S/.15</td>
                                 </tr>
                 
-                                <tr>
-                                    <td>Estudiantes</td>
-                                    <td>S/.5</td>
-                                </tr>
-                
-                                <tr>
-                                    <td>Bomberos y Policias</td>
-                                    <td>S/.5</td>
+                                <tr class="d-flex justify-content-center">
+                                    <td class="px-4 my-4">Niños</td>
+                                    <td class="px-4 my-4">S/.5</td>
                                 </tr>
                 
                             </tbody>
@@ -220,7 +216,7 @@
                 </div>
             </section>
 
-            <section class="opiniones row" style="background-color: yellowgreen;">
+            <section class="opiniones row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="sto-titulo px-xl-4">
                         <h2>OPINIONES</h2>
@@ -228,7 +224,7 @@
                     </div>
 
                     <div class="row my-5">
-                        <div class="opiniones_card col-12 col-xl-4">
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                         
                         <div class="stars">
@@ -242,7 +238,7 @@
                         <h3>Lorem Ipsum Dolor.</h3>
                         </div>
                             
-                        <div class="opiniones_card col-12 col-xl-4">
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                         
                         <div class="stars">
@@ -256,7 +252,7 @@
                         <h3>Lorem Ipsum Dolor.</h3>
                         </div>
                             
-                        <div class="opiniones_card col-12 col-xl-4">
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -279,7 +275,7 @@
             </section>
 
 
-            <footer class="row" style="background-color: rgb(198, 113, 113);">
+            <footer class="row">
                 
                 <div class="navfoot container py-4">
 
