@@ -1,0 +1,16 @@
+.forma {
+    background-image: url("../img-museo/vista-muro-chan-chan.jpg");
+    background-color: #191919;
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    .btn-primary {
+      background-color: rgb(105, 35, 35);
+      border: none;
+    }
+    .form-check-input {
+      background-color: rgb(105, 35, 35);
+    }
+  }

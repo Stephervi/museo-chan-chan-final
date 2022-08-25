@@ -3,110 +3,101 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-color: black;
-  box-shadow: -1px 5px 16px -3px rgba(0, 0, 0, 0.72);
+.talleres {
+  background-color: rgb(150, 40, 40);
 }
-header a {
-  margin: 16px;
-}
-header .active {
+.talleres h2 {
   font-weight: bold;
-}
-header .contacto {
-  background-color: rgb(115, 34, 34);
-  border-radius: 5px;
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    background-color: #fff;
-  }
-  header a {
-    color: black !important;
-    text-align: center;
-  }
-  header li a:hover {
-    background-color: #e9c7c7;
-    border-radius: 5px;
-  }
-  header li .contacto:hover {
-    background-color: rgb(204, 147, 77);
-  }
-  header img {
-    filter: invert(100%);
-  }
-}
-.shero {
-  height: 90vh;
-  background-image: url("../img-museo/img-hero-mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: #fff;
-  text-align: center;
-  padding-bottom: 60px;
 }
-.shero .hero {
-  display: flex;
+.talleres hr {
+  width: 30vw;
+  border: 3px solid #fff;
 }
-.shero h1 {
-  font-weight: bolder;
+.talleres h6 {
+  font-weight: bold;
+  color: rgb(140, 42, 42);
 }
-.shero p {
-  font-weight: lighter;
+.talleres span {
+  background-color: rgba(42, 40, 40, 0.2078431373);
 }
 
 @media screen and (min-width: 1200px) {
-  .shero {
-    background-image: url("../img-museo/img-hero-section.png");
-    text-align: start;
-    font-size: 1.5rem;
+  .talleres hr {
+    width: 15vw;
+    border: 3px solid #fff;
   }
 }
+.galería h2 {
+  font-weight: bolder;
+  color: darkred;
+}
+.galería hr {
+  width: 30vw;
+  border: 3px solid darkred;
+  text-align: center;
+}
+.galería a {
+  color: #2a2828;
+  text-align: center;
+}
+.galería .active {
+  background-color: #c89466 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .galería hr {
+    width: 10vw;
+  }
+}
+.preguntas h2 {
+  font-weight: bolder;
+  color: darkred;
+}
+.preguntas hr {
+  width: 35vw;
+  border: 3px solid darkred;
+  text-align: center;
+}
+
 .maincultural {
   height: auto;
   background-color: #fff;
 }
 .maincultural .contenido h2 {
   font-weight: bolder;
-  color: darkred;
+  color: #692121;
 }
 .maincultural .contenido hr {
   width: 30vw;
-  border: 3px solid darkred;
+  border: 3px solid #692121;
+}
+@media (min-width: 1200px) {
+  .maincultural .contenido hr {
+    width: 15vw;
+    background-color: #692121;
+  }
 }
 .maincultural .contenido h5 {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .maincultural .contenido h5 {
+    margin-bottom: 24px;
+  }
+}
 .maincultural .contenido p {
   text-align: justify;
 }
-.maincultural .contenido button {
-  color: darkred;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.maincultural .contenido button i {
-  font-weight: bolder;
-  margin-left: 12px;
-}
-
-@media screen and (min-width: 1200px) {
-  .maincultural .contenido hr {
-    width: 15vw;
-  }
+@media (min-width: 1200px) {
   .maincultural .contenido .px-xl-4 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .maincultural .contenido .px-xl-4 h5 {
-    margin-bottom: 24px;
-  }
 }
+
 .mainhistoria {
   height: auto;
   background-image: url("../img-museo/img-paisaje-chan-chan.png");
@@ -123,6 +114,11 @@ header .contacto {
   width: 30vw;
   border: 3px solid #fff;
 }
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .titulo hr {
+    width: 10vw;
+  }
+}
 .mainhistoria .contenido img {
   height: 400px;
   object-fit: cover;
@@ -133,9 +129,21 @@ header .contacto {
 .mainhistoria .contenido .hbloque1__texto h4 {
   margin-bottom: 24px;
 }
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .hbloque1__texto h4 {
+    line-height: 1.5;
+    padding: 0px 64px;
+  }
+}
 .mainhistoria .contenido .hbloque1__texto p {
   font-weight: lighter;
   font-size: 1.1rem;
+}
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .hbloque1__texto p {
+    padding: 0px 64px;
+    font-size: 1rem;
+  }
 }
 .mainhistoria .contenido .hbloque2 {
   display: flex;
@@ -147,13 +155,28 @@ header .contacto {
 .mainhistoria .contenido .hbloque2 hr {
   width: 50vw;
 }
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .hbloque2 hr {
+    width: 30vw;
+  }
+}
 .mainhistoria .contenido .hbloque2 h5 {
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 1.8;
 }
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .hbloque2 h5 {
+    font-size: 1.5rem;
+  }
+}
 .mainhistoria .contenido .hbloque2 p {
   font-size: 1.1rem;
+}
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .hbloque2 p {
+    font-size: 1rem;
+  }
 }
 .mainhistoria .contenido .shblock3 {
   text-align: justify;
@@ -161,45 +184,24 @@ header .contacto {
 .mainhistoria .contenido .shblock3 h4 {
   margin-bottom: 24px;
 }
+@media (min-width: 1200px) {
+  .mainhistoria .contenido .shblock3 h4 {
+    margin-right: 60px;
+  }
+}
 .mainhistoria .contenido .shblock3 p {
   font-weight: lighter;
   font-size: 1.1rem;
 }
-
-@media screen and (min-width: 1200px) {
-  .mainhistoria .contenido .titulo hr {
-    width: 10vw;
-  }
-  .mainhistoria .contenido .hbloque1__texto h4 {
-    line-height: 1.5;
-    padding: 0px 64px;
-  }
-  .mainhistoria .contenido .hbloque1__texto p {
-    padding: 0px 64px;
-    font-size: 1rem;
-  }
-  .mainhistoria .contenido .hbloque2 {
-    margin-bottom: 30px;
-  }
-  .mainhistoria .contenido .hbloque2 hr {
-    width: 30vw;
-  }
-  .mainhistoria .contenido .hbloque2 h5 {
-    font-size: 1.5rem;
-  }
-  .mainhistoria .contenido .hbloque2 p {
-    font-size: 1rem;
-  }
-  .mainhistoria .contenido .shblock3 h4 {
-    margin-right: 60px;
-  }
+@media (min-width: 1200px) {
   .mainhistoria .contenido .shblock3 p {
     margin-right: 60px;
     font-size: 1rem;
   }
 }
+
 .maininfog {
-  background-color: rgb(21, 21, 21);
+  background-color: #2a2828;
 }
 .maininfog .contenido .titulo h2 {
   font-weight: bold;
@@ -214,6 +216,12 @@ header .contacto {
   font-size: 1.1rem;
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .maininfog h5 {
+    font-size: 1.3rem;
+    margin: 24px 0px;
+  }
+}
 .maininfog p {
   text-align: justify;
 }
@@ -221,14 +229,8 @@ header .contacto {
   background-color: rgba(0, 0, 0, 0.464);
 }
 
-@media screen and (min-width: 1200px) {
-  .maininfog h5 {
-    font-size: 1.3rem;
-    margin: 24px 0px;
-  }
-}
 .mainexhib {
-  background-color: rgb(150, 40, 40);
+  background-color: #692121;
   color: #fff;
 }
 .mainexhib .contenido .titulo h2 {
@@ -249,83 +251,20 @@ header .contacto {
   text-align: justify;
 }
 .mainexhib span {
-  background-color: rgba(21, 16, 16, 0.464);
+  background-color: #160c0c;
 }
 .mainexhib button {
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.mainexhib button i {
-  font-weight: bolder;
-  margin-left: 12px;
 }
 .mainexhib .card {
-  background-color: black;
+  background-color: #160c0c;
 }
-
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .mainexhib img {
     filter: brightness(60%);
   }
 }
-footer {
-  background-color: rgb(8, 8, 8);
-  color: #fff;
-  text-align: center;
-}
-footer .blinks {
-  background-color: rgb(8, 8, 8);
-  padding: 32px 0px;
-}
-footer a {
-  text-decoration: none;
-  color: #fff;
-  padding: 24px;
-  border-bottom: 0.05px solid rgba(255, 255, 255, 0.051);
-  border-top: 0.05px solid rgba(255, 255, 255, 0.051);
-}
-footer i {
-  font-size: 1.6rem;
-  margin: 24px;
-}
-footer p {
-  font-weight: lighter;
-  font-size: 1.1rem;
-}
-footer article {
-  padding: 16px 0px;
-}
-footer .lfcontacto {
-  background-color: rgb(90, 13, 13);
-  border-radius: 15px;
-  width: 60vw;
-  padding: 10px;
-  margin-top: 24px;
-}
 
-@media screen and (min-width: 1200px) {
-  footer .lfcontacto {
-    width: auto;
-    height: 60px;
-    padding: 16px;
-    margin-top: 0px;
-  }
-  footer .blinks {
-    display: flex;
-    align-items: center;
-  }
-  footer a {
-    border: none;
-  }
-  footer a:hover {
-    color: rgb(151, 66, 66);
-    background-color: rgb(12, 12, 12);
-    border-radius: 15px;
-    padding: 16px;
-  }
-}
 .ubicacion {
   background-color: rgb(150, 40, 40);
   color: #fff;
@@ -370,7 +309,7 @@ footer .lfcontacto {
 }
 .tarifas .tarifas__tabla1 thead .tabla1_categ {
   background-color: rgb(70, 16, 16);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.3rem;
   border-radius: 8px;
   padding: 12px 32px;
@@ -389,8 +328,8 @@ footer .lfcontacto {
   margin-bottom: 32px;
 }
 .tarifas .tarifas__tabla2 thead .tabla1_categ {
-  background-color: #C89466;
-  color: #FFFFFF;
+  background-color: #c89466;
+  color: #ffffff;
   font-size: 1.3rem;
   border-radius: 8px;
   padding: 12px 32px;
@@ -410,7 +349,7 @@ footer .lfcontacto {
 }
 .tarifas .tarifas__tabla3 thead .tabla1_categ {
   background-color: rgb(29, 60, 39);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.3rem;
   border-radius: 8px;
   padding: 12px 32px;
@@ -440,7 +379,7 @@ footer .lfcontacto {
   }
 }
 .opiniones {
-  background-color: #2A2828;
+  background-color: #2a2828;
 }
 .opiniones h2 {
   font-weight: bold;
@@ -477,61 +416,80 @@ footer .lfcontacto {
     width: 30vw;
   }
 }
-.talleres {
-  background-color: rgb(150, 40, 40);
-}
-.talleres h2 {
+.btn-link {
+  color: #692121;
+  text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
+}
+.btn-link i {
+  font-weight: bolder;
+  margin-left: 12px;
+}
+@media (min-width: 1200px) {
+  .btn-link:hover {
+    color: #c79665;
+  }
+}
+
+footer {
+  background-color: #090909;
   color: #fff;
+  text-align: center;
 }
-.talleres hr {
-  width: 30vw;
-  border: 3px solid #fff;
+footer .blinks {
+  background-color: #2a2828;
+  padding: 32px 0px;
 }
-.talleres h6 {
-  font-weight: bold;
-  color: rgb(140, 42, 42);
-}
-.talleres span {
-  background-color: rgba(42, 40, 40, 0.2078431373);
-}
-
-@media screen and (min-width: 1200px) {
-  .talleres hr {
-    width: 15vw;
-    border: 3px solid #fff;
+@media (min-width: 1200px) {
+  footer .blinks {
+    display: flex;
+    align-items: center;
   }
 }
-.galería h2 {
-  font-weight: bolder;
-  color: darkred;
+footer a {
+  text-decoration: none;
+  color: #fff;
+  padding: 24px;
+  border-bottom: 0.05px solid rgba(255, 255, 255, 0.051);
+  border-top: 0.05px solid rgba(255, 255, 255, 0.051);
 }
-.galería hr {
-  width: 30vw;
-  border: 3px solid darkred;
-  text-align: center;
-}
-.galería a {
-  color: #2A2828;
-  text-align: center;
-}
-.galería .active {
-  background-color: #C89466 !important;
-}
-
-@media screen and (min-width: 1200px) {
-  .galería hr {
-    width: 10vw;
+@media (min-width: 1200px) {
+  footer a {
+    border: none;
+  }
+  footer a:hover {
+    color: #c79665;
+    background-color: #2a2828;
+    border-radius: 15px;
+    padding: 16px;
   }
 }
-.preguntas h2 {
-  font-weight: bolder;
-  color: darkred;
+footer i {
+  font-size: 1.6rem;
+  margin: 24px;
 }
-.preguntas hr {
-  width: 35vw;
-  border: 3px solid darkred;
-  text-align: center;
+footer p {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+footer article {
+  padding: 16px 0px;
+}
+footer .lfcontacto {
+  background-color: #692121;
+  border-radius: 15px;
+  width: 60vw;
+  padding: 10px;
+  margin-top: 24px;
+}
+@media (min-width: 1200px) {
+  footer .lfcontacto {
+    width: auto;
+    height: 60px;
+    padding: 16px;
+    margin-top: 0px;
+  }
 }
 
 .forma {
@@ -549,6 +507,67 @@ footer .lfcontacto {
 }
 .forma .form-check-input {
   background-color: rgb(105, 35, 35);
+}
+
+header {
+  background-color: #090909;
+  box-shadow: -1px 5px 16px -3px rgba(0, 0, 0, 0.72);
+}
+header a {
+  margin: 16px;
+}
+header .active {
+  font-weight: bold;
+}
+header .contacto {
+  background-color: rgb(115, 34, 34);
+  border-radius: 5px;
+}
+@media (min-width: 1200px) {
+  header {
+    background-color: #fff;
+  }
+  header a {
+    color: #090909 !important;
+    text-align: center;
+  }
+  header a:hover {
+    background-color: #e9c7c7;
+    border-radius: 5px;
+  }
+  header .contacto:hover {
+    background-color: rgb(204, 147, 77);
+  }
+  header img {
+    filter: invert(100%);
+  }
+}
+
+.shero {
+  height: 90vh;
+  background-image: url("../img-museo/img-hero-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .shero {
+    background-image: url("../img-museo/img-hero-section.png");
+    text-align: start;
+    font-size: 1.5rem;
+  }
+}
+.shero .hero {
+  display: flex;
+}
+.shero h1 {
+  font-weight: bolder;
+}
+.shero p {
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,202 @@
+.maincultural {
+    height: auto;
+    background-color: $blanco;
+    .contenido {
+      h2 {
+        font-weight: bolder;
+        color: $color-rojo;
+      }
+      hr {
+        width: 30vw;
+        border: 3px solid $color-rojo;
+        @include large {
+          width: 15vw;
+          background-color: $color-rojo;
+        }
+      }
+      h5 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        @include large {
+          margin-bottom: 24px;
+        }
+      }
+      p {
+        text-align: justify;
+      }
+      .px-xl-4 {
+        @include large {
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+  
+
+  .mainhistoria {
+    height: auto;
+    background-image: url("../img-museo/img-paisaje-chan-chan.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: $blanco;
+    .contenido {
+      h2 {
+        font-weight: bold;
+        color: $blanco;
+      }
+      .titulo {
+        hr {
+          width: 30vw;
+          border: 3px solid $blanco;
+          @include large {
+            width: 10vw;
+          }
+        }
+      }
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
+      .hbloque1__texto {
+        text-align: justify;
+        h4 {
+          margin-bottom: 24px;
+          @include large {
+            line-height: 1.5;
+            padding: 0px 64px;
+          }
+        }
+        p {
+          font-weight: lighter;
+          font-size: 1.1rem;
+          @include large {
+            padding: 0px 64px;
+            font-size: 1rem;
+          }
+        }
+      }
+  
+      .hbloque2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 24px;
+        hr {
+          width: 50vw;
+          @include large {
+            width: 30vw;
+          }
+        }
+        h5 {
+          font-weight: bold;
+          font-size: 1.3rem;
+          line-height: 1.8;
+          @include large {
+            font-size: 1.5rem;
+          }
+        }
+        p {
+          font-size: 1.1rem;
+          @include large {
+            font-size: 1rem;
+          }
+        }
+      }
+  
+      .shblock3 {
+        text-align: justify;
+        h4 {
+          margin-bottom: 24px;
+          @include large {
+            margin-right: 60px;
+          }
+        }
+        p {
+          font-weight: lighter;
+          font-size: 1.1rem;
+          @include large {
+            margin-right: 60px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .maininfog {
+    background-color: $gris-oscuro;
+    .contenido {
+      .titulo {
+        h2 {
+          font-weight: bold;
+          color: $blanco;
+        }
+        hr {
+          width: 30vw;
+          border: 3px solid $blanco;
+        }
+      }
+    }
+    h5 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+      @include large {
+        font-size: 1.3rem;
+        margin: 24px 0px;
+      }
+    }
+    p {
+      text-align: justify;
+    }
+    span {
+      background-color: rgba(0, 0, 0, 0.464);
+    }
+  }
+  
+  
+  .mainexhib {
+    background-color: $color-rojo;
+    color: $blanco;
+    .contenido {
+      .titulo {
+        h2 {
+          font-weight: bold;
+          color:$blanco;
+        }
+        hr {
+          width: 30vw;
+          border: 3px solid $blanco;
+        }
+      }
+    }
+    h5 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    p {
+      font-weight: lighter;
+      text-align: justify;
+    }
+    span {
+      background-color: $negro-rojizo;
+    }
+    button {
+      color: $blanco;
+    }
+    .card {
+      background-color: $negro-rojizo;
+    }
+    @include large {
+      img {
+        filter: brightness(60%);
+      }
+    }
+  }
+  

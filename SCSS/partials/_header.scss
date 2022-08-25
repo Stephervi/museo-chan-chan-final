@@ -1,0 +1,32 @@
+header {
+    background-color: $negro;
+    box-shadow: -1px 5px 16px -3px rgba(0, 0, 0, 0.72);
+    a {
+      margin: 16px;
+    }
+    .active {
+      font-weight: bold;
+    }
+    .contacto {
+      background-color: rgb(115, 34, 34);
+      border-radius: 5px;
+    }
+    @include large {
+      background-color: $blanco;
+      a {
+        color: $negro !important;
+        text-align: center;
+        &:hover {
+          background-color: #e9c7c7;
+          border-radius: 5px;
+        }
+      }
+      .contacto:hover {
+        background-color: rgb(204, 147, 77);
+      }
+      img {
+        filter: invert(100%);
+      }
+    }
+  }
+  

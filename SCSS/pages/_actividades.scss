@@ -1,0 +1,55 @@
+.talleres {
+    background-color: rgb(150, 40, 40);
+    h2 {
+      font-weight: bold;
+      color: #fff;
+    }
+    hr {
+      width: 30vw;
+      border: 3px solid #fff;
+    }
+    h6 {
+      font-weight: bold;
+      color: rgb(140, 42, 42);
+    }
+    span {
+      background-color: #2a282835;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .talleres {
+      hr {
+        width: 15vw;
+        border: 3px solid #fff;
+      }
+    }
+  }
+  
+  .galería {
+    h2 {
+      font-weight: bolder;
+      color: darkred;
+    }
+    hr {
+      width: 30vw;
+      border: 3px solid darkred;
+      text-align: center;
+    }
+  
+    a {
+      color: #2a2828;
+      text-align: center;
+    }
+    .active {
+      background-color: #c89466 !important;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .galería {
+      hr {
+        width: 10vw;
+      }
+    }
+  }

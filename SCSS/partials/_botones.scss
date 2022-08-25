@@ -1,0 +1,18 @@
+
+.btn-link {
+    color: $color-rojo;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    i {
+    font-weight: bolder;
+    margin-left: 12px;
+    };
+    
+    @include large {
+        &:hover {
+            color: $melon;
+        }
+    }
+    
+}
