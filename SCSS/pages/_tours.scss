@@ -1,0 +1,174 @@
+.ubicacion {
+    background-color: rgb(150, 40, 40);
+    color: #fff;
+    .stu-titulo {
+      h2 {
+        font-weight: bold;
+        color: #fff;
+      }
+      hr {
+        width: 30vw;
+        border: 3px solid #fff;
+      }
+    }
+    iframe {
+      height: 55vh;
+      filter: grayscale(1%) invert(95%) sepia(30%);
+    }
+    .block2 {
+      text-align: center;
+      font-size: 1.2rem;
+      tbody {
+        font-weight: lighter;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .ubicacion {
+      .stu-titulo {
+        hr {
+          width: 15vw;
+        }
+      }
+    }
+  }
+  
+  .tarifas {
+    h2 {
+      font-weight: bolder;
+      color: darkred;
+    }
+    hr {
+      width: 30vw;
+      border: 3px solid darkred;
+      text-align: center;
+    }
+  
+    .tarifas__tabla1 {
+      text-align: center;
+      margin-bottom: 32px;
+      thead {
+        .tabla1_categ {
+          background-color: rgb(70, 16, 16);
+          color: #ffffff;
+          font-size: 1.3rem;
+          border-radius: 8px;
+          padding: 12px 32px;
+        }
+        .tabla1_subcateg {
+          font-size: 1.3rem;
+        }
+      }
+      tbody {
+        font-size: 1.2rem;
+        tr {
+          border-bottom: 1px solid rgb(20, 20, 20);
+        }
+      }
+    }
+  
+    .tarifas__tabla2 {
+      text-align: center;
+      margin-bottom: 32px;
+      thead {
+        .tabla1_categ {
+          background-color: #c89466;
+          color: #ffffff;
+          font-size: 1.3rem;
+          border-radius: 8px;
+          padding: 12px 32px;
+        }
+        .tabla1_subcateg {
+          font-size: 1.3rem;
+        }
+      }
+      tbody {
+        font-size: 1.2rem;
+        tr {
+          border-bottom: 1px solid rgb(20, 20, 20);
+        }
+      }
+    }
+  
+    .tarifas__tabla3 {
+      text-align: center;
+      margin-bottom: 32px;
+      thead {
+        .tabla1_categ {
+          background-color: rgb(29, 60, 39);
+          color: #ffffff;
+          font-size: 1.3rem;
+          border-radius: 8px;
+          padding: 12px 32px;
+        }
+        .tabla1_subcateg {
+          font-size: 1.3rem;
+        }
+      }
+      tbody {
+        font-size: 1.2rem;
+        tr {
+          border-bottom: 1px solid rgb(20, 20, 20);
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .tarifas {
+      hr {
+        width: 10vw;
+      }
+      .tarifas__tabla1 {
+        width: 30vw;
+      }
+      .tarifas__tabla2 {
+        width: 30vw;
+      }
+      .tarifas__tabla3 {
+        width: 30vw;
+      }
+    }
+  }
+  
+  .opiniones {
+    background-color: #2a2828;
+    h2 {
+      font-weight: bold;
+      color: #fff;
+    }
+    hr {
+      width: 30vw;
+      border: 3px solid #fff;
+    }
+    .opiniones_card {
+      background-color: #fff;
+      margin-bottom: 42px;
+      padding: 32px;
+      p {
+        text-align: justify;
+      }
+      .stars {
+        color: rgb(255, 166, 0);
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 16px;
+      }
+      h3 {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .opiniones {
+      hr {
+        width: 15vw;
+      }
+      .opiniones_card {
+        width: 30vw;
+      }
+    }
+  }

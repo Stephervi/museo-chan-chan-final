@@ -1,0 +1,54 @@
+footer {
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    .blinks {
+      background-color: $gris-oscuro;
+      padding: 32px 0px;
+      @include large {
+        display: flex;
+        align-items: center;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $blanco;
+      padding: 24px;
+      border-bottom: 0.05px solid rgba(255, 255, 255, 0.051);
+      border-top: 0.05px solid rgba(255, 255, 255, 0.051);
+      @include large {
+        border: none;
+        &:hover {
+          color: $melon;
+          background-color: $gris-oscuro;
+          border-radius: 15px;
+          padding: 16px;
+        }
+      }
+    }
+    i {
+      font-size: 1.6rem;
+      margin: 24px;
+    }
+    p {
+      font-weight: lighter;
+      font-size: 1.1rem;
+    }
+    article {
+      padding: 16px 0px;
+    }
+    .lfcontacto {
+      background-color: $color-rojo;
+      border-radius: 15px;
+      width: 60vw;
+      padding: 10px;
+      margin-top: 24px;
+      @include large {
+        width: auto;
+        height: 60px;
+        padding: 16px;
+        margin-top: 0px;
+      }
+    }
+}
+  

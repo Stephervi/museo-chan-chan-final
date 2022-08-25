@@ -1,0 +1,21 @@
+// para crear nuestras abreviaciones de comandos, funciona como las acciones de psd
+
+// BREAKPOINTS
+
+@mixin small {
+    @media (max-width: 576px) {
+        @content
+    }
+};
+
+@mixin medium {
+    @media (min-width: 577px) and (max-width: 1199px) {
+        @content
+    }
+};
+
+@mixin large {
+    @media (min-width: 1200px) {
+        @content
+    }
+};
