@@ -1,6 +1,10 @@
 .maincultural {
     height: auto;
     background-color: $blanco;
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     .contenido {
       h2 {
         font-weight: bolder;
@@ -37,11 +41,15 @@
 
   .mainhistoria {
     height: auto;
-    background-image: url("../img-museo/img-paisaje-chan-chan.png");
+    background-image: url("../img-museo/img-paisaje-chan-chan-opt.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: $blanco;
+    @include large {
+      padding-left: 250px;
+      padding-right: 200px;
+    }
     .contenido {
       h2 {
         font-weight: bold;
@@ -130,6 +138,11 @@
   
   .maininfog {
     background-color: $gris-oscuro;
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    
     .contenido {
       .titulo {
         h2 {
@@ -139,6 +152,9 @@
         hr {
           width: 30vw;
           border: 3px solid $blanco;
+          @include large {
+            width: 15vw;
+          }
         }
       }
     }
@@ -162,6 +178,10 @@
   
   .mainexhib {
     background-color: $color-rojo;
+    @include large {
+    padding-left: 250px;
+    padding-right: 250px;
+    }
     color: $blanco;
     .contenido {
       .titulo {
@@ -198,5 +218,13 @@
         filter: brightness(60%);
       }
     }
+  }
+
+  .maininst {
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    
   }
   

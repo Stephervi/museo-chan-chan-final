@@ -1,11 +1,18 @@
 .preguntas {
+  @include large {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
     h2 {
       font-weight: bolder;
-      color: darkred;
+      color: $color-rojo;
     }
     hr {
       width: 35vw;
-      border: 3px solid darkred;
+      border: 3px solid $color-rojo;
       text-align: center;
+      @include large {
+        width: 15vw;
+      }
     }
   }

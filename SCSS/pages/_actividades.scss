@@ -1,55 +1,75 @@
 .talleres {
-    background-color: rgb(150, 40, 40);
+    background-color: $color-rojo;
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     h2 {
       font-weight: bold;
-      color: #fff;
+      color: $blanco;
     }
     hr {
       width: 30vw;
-      border: 3px solid #fff;
+      border: 3px solid $blanco;
+      @include large {
+        width: 10vw;
+      }
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $color-rojo;
+      padding: 12px 0px;
+      text-align: center;
+      margin: 0px;
     }
     h6 {
       font-weight: bold;
-      color: rgb(140, 42, 42);
+      color: $color-rojo;
     }
     span {
       background-color: #2a282835;
     }
   }
-  
-  @media screen and (min-width: 1200px) {
-    .talleres {
-      hr {
-        width: 15vw;
-        border: 3px solid #fff;
-      }
-    }
-  }
+
   
   .galería {
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     h2 {
       font-weight: bolder;
-      color: darkred;
+      color: $color-rojo;
     }
     hr {
       width: 30vw;
-      border: 3px solid darkred;
+      border: 3px solid $color-rojo;
       text-align: center;
+      @include large {
+        width: 10vw;
+      }
     }
   
     a {
-      color: #2a2828;
+      color: $negro;
       text-align: center;
     }
     .active {
-      background-color: #c89466 !important;
+      background-color: $melon !important;
     }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .galería {
-      hr {
-        width: 10vw;
+    img {
+      height: 329px;
+      object-fit: cover;
+      filter: brightness(0.3);
+      @include large {
+        height: 400px;
+        object-fit: cover;
+        &:hover {
+          filter: brightness(1);
+          transition: 1s;
+        }
       }
+      
     }
   }

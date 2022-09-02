@@ -1,16 +1,16 @@
 .forma {
     background-image: url("../img-museo/vista-muro-chan-chan.jpg");
-    background-color: #191919;
+    background-color: $negro;
     background-blend-mode: overlay;
     background-size: cover;
-    color: #fff;
+    color: $blanco;
     font-weight: lighter;
     text-align: center;
     .btn-primary {
-      background-color: rgb(105, 35, 35);
+      background-color: $color-rojo;
       border: none;
     }
     .form-check-input {
-      background-color: rgb(105, 35, 35);
+      background-color: $color-rojo;
     }
   }
