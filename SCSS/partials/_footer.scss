@@ -3,7 +3,7 @@ footer {
     color: $blanco;
     text-align: center;
     .blinks {
-      background-color: $gris-oscuro;
+      background-color: map-get($map: $escalas-gris , $key: 100);
       padding: 32px 0px;
       @include large {
         display: flex;
@@ -23,6 +23,7 @@ footer {
           background-color: $gris-oscuro;
           border-radius: 15px;
           padding: 16px;
+          transition: 0.5s;
         }
       }
     }

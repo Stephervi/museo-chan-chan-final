@@ -1,6 +1,8 @@
 .shero {
     height: 90vh;
-    background-image: url("../img-museo/img-hero-mobile.png");
+    background-image: url("../../img-museo/img-portada-s-opt.jpg");
+    background-color: rgba(0, 0, 0, 0.786);
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,18 +10,32 @@
     text-align: center;
     padding-bottom: 60px;
     @include large {
-      background-image: url("../img-museo/img-hero-section.png");
+      background-image: url("../../img-museo/img-portada-xl-opt.jpg");
+      background-blend-mode: normal;
       text-align: start;
       font-size: 1.5rem;
     }
     .hero {
       display: flex;
     }
-    h1 {
-      font-weight: bolder;
+    .htexto {
+      @include large {
+        padding-bottom: 64px;
+      }      
+      h1 {
+        font-weight: bolder;
+        @include large {
+          font-size: 4rem;
+          padding-left: 250px;
+        }
+      }
+      p {
+        font-weight: lighter;
+        @include large {
+          padding-left: 250px;
+        }
+      }
     }
-    p {
-      font-weight: lighter;
-    }
+    
   }
   

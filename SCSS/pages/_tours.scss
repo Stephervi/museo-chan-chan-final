@@ -1,19 +1,29 @@
 .ubicacion {
-    background-color: rgb(150, 40, 40);
-    color: #fff;
+    background-color: $color-rojo;
+    color: $blanco;
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     .stu-titulo {
       h2 {
         font-weight: bold;
-        color: #fff;
+        color:$blanco;
       }
       hr {
         width: 30vw;
-        border: 3px solid #fff;
+        border: 3px solid $blanco;
+        @include large {
+          width: 12vw;
+        }
       }
     }
     iframe {
       height: 55vh;
       filter: grayscale(1%) invert(95%) sepia(30%);
+      @include large {
+        width: 35vw;
+      }
     }
     .block2 {
       text-align: center;
@@ -24,25 +34,23 @@
     }
   }
   
-  @media screen and (min-width: 1200px) {
-    .ubicacion {
-      .stu-titulo {
-        hr {
-          width: 15vw;
-        }
-      }
-    }
-  }
   
   .tarifas {
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     h2 {
       font-weight: bolder;
-      color: darkred;
+      color:$color-rojo;
     }
     hr {
       width: 30vw;
-      border: 3px solid darkred;
+      border: 3px solid $color-rojo;
       text-align: center;
+      @include large {
+        width: 10vw;
+      }
     }
   
     .tarifas__tabla1 {
@@ -50,10 +58,9 @@
       margin-bottom: 32px;
       thead {
         .tabla1_categ {
-          background-color: rgb(70, 16, 16);
-          color: #ffffff;
+          background-color: $color-rojo;
+          color: $blanco;
           font-size: 1.3rem;
-          border-radius: 8px;
           padding: 12px 32px;
         }
         .tabla1_subcateg {
@@ -63,87 +70,53 @@
       tbody {
         font-size: 1.2rem;
         tr {
-          border-bottom: 1px solid rgb(20, 20, 20);
+          border-bottom: 1px solid $negro;
         }
+      }
+      @include large {
+        width: 30vw;
       }
     }
   
     .tarifas__tabla2 {
-      text-align: center;
-      margin-bottom: 32px;
+      @extend .tarifas__tabla1;
       thead {
         .tabla1_categ {
-          background-color: #c89466;
-          color: #ffffff;
-          font-size: 1.3rem;
-          border-radius: 8px;
-          padding: 12px 32px;
-        }
-        .tabla1_subcateg {
-          font-size: 1.3rem;
-        }
-      }
-      tbody {
-        font-size: 1.2rem;
-        tr {
-          border-bottom: 1px solid rgb(20, 20, 20);
+          background-color: $melon;
         }
       }
     }
   
     .tarifas__tabla3 {
-      text-align: center;
-      margin-bottom: 32px;
+      @extend .tarifas__tabla1;
       thead {
         .tabla1_categ {
-          background-color: rgb(29, 60, 39);
-          color: #ffffff;
-          font-size: 1.3rem;
-          border-radius: 8px;
-          padding: 12px 32px;
-        }
-        .tabla1_subcateg {
-          font-size: 1.3rem;
-        }
-      }
-      tbody {
-        font-size: 1.2rem;
-        tr {
-          border-bottom: 1px solid rgb(20, 20, 20);
+          background-color: $verde;
         }
       }
     }
   }
   
-  @media screen and (min-width: 1200px) {
-    .tarifas {
-      hr {
-        width: 10vw;
-      }
-      .tarifas__tabla1 {
-        width: 30vw;
-      }
-      .tarifas__tabla2 {
-        width: 30vw;
-      }
-      .tarifas__tabla3 {
-        width: 30vw;
-      }
-    }
-  }
   
   .opiniones {
-    background-color: #2a2828;
+    background-color: $negro;
+    @include large {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
     h2 {
       font-weight: bold;
-      color: #fff;
+      color: $blanco;
     }
     hr {
       width: 30vw;
-      border: 3px solid #fff;
+      border: 3px solid $blanco;
+      @include large {
+        width: 12vw;
+      }
     }
     .opiniones_card {
-      background-color: #fff;
+      background-color: $blanco;
       margin-bottom: 42px;
       padding: 32px;
       p {
@@ -159,16 +132,21 @@
         font-weight: bold;
         text-align: center;
       }
+      @include large {
+        width: 20vw;
+        height: 350px;
+      }
+    }
+  }
+
+  .foto {
+    height: 300px;
+    background-image: url("../../img-museo/vista-muro-chan-chan-opt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include large {
+      height: 600px;
+      background-position: bottom;
     }
   }
   
-  @media screen and (min-width: 1200px) {
-    .opiniones {
-      hr {
-        width: 15vw;
-      }
-      .opiniones_card {
-        width: 30vw;
-      }
-    }
-  }

@@ -1,11 +1,17 @@
+// ----BASES------
 @import "base/mixin";
 @import "base/reset";
 @import "base/variables";
+@import "base/map";
+
+// ----PÁGINAS------
 @import "pages/actividades";
 @import "pages/contacto";
 @import "pages/faq";
 @import "pages/museo";
 @import "pages/tours";
+
+// ----PARTIALS------
 @import "partials/botones";
 @import "partials/cards";
 @import "partials/footer";
