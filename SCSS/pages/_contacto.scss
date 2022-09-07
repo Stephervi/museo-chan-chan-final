@@ -1,0 +1,12 @@
+.forma {
+    @include large {
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            padding: 0px 55px;
+            text-align: center;
+        }
+    }
+}

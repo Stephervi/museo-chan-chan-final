@@ -1,8 +1,4 @@
 .preguntas {
-  @include large {
-    padding-left: 250px;
-    padding-right: 250px;
-  }
     h2 {
       font-weight: bolder;
       color: $color-rojo;

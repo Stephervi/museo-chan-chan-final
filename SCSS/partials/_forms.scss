@@ -1,7 +1,7 @@
 .forma {
-    background-image: url("../img-museo/vista-muro-chan-chan.jpg");
-    background-color: $negro;
-    background-blend-mode: overlay;
+    background-image: url("../../img-museo/vista-muro-chan-chan-opt.jpg");
+    background-color: map-get($map: $escalas-gris, $key: 200);
+    background-blend-mode: multiply;
     background-size: cover;
     color: $blanco;
     font-weight: lighter;
