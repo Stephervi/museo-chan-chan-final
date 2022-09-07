@@ -4,14 +4,27 @@ header {
     li {
       a {
         margin: 16px;
+        h1 {
+          font-size: 16px;
+          font-weight: bolder;
+          margin: 16px;
+        }
       }
     }
-    .active {
-      font-weight: bold;
-    }
+    
     .contacto {
-      background-color: rgb(115, 34, 34);
-      border-radius: 5px;
+      .btn-primary {
+        background-color: $color-rojo;
+        color: $blanco !important;
+        border: none;
+        @include large {
+          &:hover {
+            background-color: $melon;
+            font-weight: bolder;
+            color: $color-rojo !important;
+          }
+        }
+      }
     }
     @include large {
       background-color: $blanco;
@@ -26,8 +39,11 @@ header {
           }
         }
       }
-      .contacto:hover {
-        background-color: $melon;
+      .contacto {
+        button:hover {
+          background-color: $melon;
+          border-color: $blanco;
+        }
       }
       img {
         filter: invert(100%);

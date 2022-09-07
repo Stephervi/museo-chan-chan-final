@@ -33,15 +33,23 @@
             <header class="row sticky-top header">
 
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container">
+                    <div class="container pb-4 pb-xl-0">
                         <a class="navbar-brand" href="./index.html"><img src="./img-museo/logo-chan-chan-blanco.png" alt="logo museo" width="150px"></a>
-                        <button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav align-items-center ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./index.html">Museo</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active d-flex align-items-center" href="./index.html" role="button" data-bs-toggle="dropdown">
+                                        <h1>Museo</h1>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#sigcult">Significado</a></li>
+                                        <li><a class="dropdown-item" href="#histo">Historia</a></li>
+                                        <li><a class="dropdown-item" href="#infog">Infografías</a></li>
+                                        <li><a class="dropdown-item" href="#exhib">Exhibiciones</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./pages/tours.html">Tours</a>
@@ -54,7 +62,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <div class="contacto">
-                                        <a class="nav-link link-light" href="./pages/contacto.html">Contacto</a>
+                                        <a class="btn btn-primary" href="./pages/contacto.html" role="button">Contacto</a>
                                     </div>
                                 </li>
                             </ul>
@@ -71,7 +79,7 @@
                     <div class="row ms-2 ms-xl-5 mb-xl-5 d-flex align-items-end">
                         <div class="htexto col-12 col-xl-8 d-flex flex-column justify-content-center">
 
-                            <h1>REINO CHIMÚ,<br>LOS URBANISTAS <br>DE BARRO</h1>
+                            <h6>REINO CHIMÚ,<br>LOS URBANISTAS <br>DE BARRO</h6>
                             <p class="col-xl-9">La cultura más grande y próspera del Período Intermedio Tardío y el segundo mayor imperio en la historia de los Andes antiguos</p>
 
                         </div>
@@ -86,7 +94,7 @@
                 <div class="mcontent col">
 
                     <!-- SECCION SIGNIFICADO CULTURAL -->
-                    <section class="maincultural row">
+                    <section id="sigcult" class="maincultural row">
                         
                         <div class="contenido container my-4 p-4 px-xl-5">
                             <div class="titulo px-xl-4">
@@ -96,16 +104,36 @@
 
                             <div class="px-xl-4 d-flex flex-column flex-xl-row align-items-center">
                                 <div class="frase col-xl-6 px-xl-5 my-5 d-flex flex-column align-items-center">
-                                    <h5>"Lorem ipsum dolor sit amet consectetur adipisicing elit"</h5>
+                                    <h3>"Una de las sociedades complejas más importantes del mundo andino"</h3>
                                     <img src="./img-museo/img-generica-cuadrado.png" alt="" width="100">
                                 </div>
-                                <div class="col-xl-6 texto">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem voluptatum? Et illo necessitatibus sapiente voluptas adipisci similique corporis eligendi neque possimus vel recusandae optio aperiam maiores, excepturi consectetur.  Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero nostrum quibusdam fugiat provident doloremque laudantium sapiente et earum explicabo saepe culpa, nobis obcaecati ex quas nemo mollitia natus.</p>
-                                    <button type="button" class="btn btn-link d-flex">
-                                        <P>VER MÁS</P>
+                                <div class="col-xl-6 texto d-flex flex-column">
+                                    <p>El Complejo Arqueológico de Chan Chan, se deriva de los distintos tipos de valores históricos, estéticos, científicos y sociales que caracterizan al sitio en particular. Su importancia estriba en que es la referencia obligada para el diseño y el desarrollo de los programas de trabajo, para garantizar que toda acción que se ejecute en el Complejo tenga como fin último la conservación de los valores culturales de Chan Chan.</p>
+                                    <p>Chan Chan, construido integramente en tierra, fue la capital política, administrativa y religiosa del Estado Chimor, y expresa el más alto grado de desarrollo urbano, económico y social alcanzado por las sociedades costeñas de su época. En él se reflejan, también los mecanismos de control de excedentes y un complejo sistema de información, intercambio y reciprocidad para articular diversos territorios y valles conquistados.</p>
+                                    
+                                    <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <p>SABER MÁS</p>
                                         <i class="bi bi-arrow-right"></i>
                                     </button>
+                                    <!-- modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h4 class="modal-title" id="exampleModalLabel">SIGNIFICADO CULTURAL</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>La prosperidad inicial de los chimú fue en gran parte debida a destreza agrícola, ya que construyeron extensos sistemas de irrigación usando canales. Más tarde, sus exitosas campañas militares y su política de exigir tributos aseguraron que llegaran a ser el poder regional dominante. Chan Chan llegó a convertirse en la capital de otros centros administrativos, tales como Farfán, Manchan, El Milagro, Quebrado Katuay, y el lugar donde se encuentra la fortaleza de Paramonga. Esta dominación tocó a su fin con el ascenso de los incas quienes, conducidos por Tupac Yupanqui, capturaron al undécimo gobernante chimú conocido como Minchanzaman en el año 1470.</p>
+                                                    <p>Luego de eso, el reino chimú se convirtió un estado vasallo del Imperio inca, que mantuvo preso permanentemente al rey chimú en Cuzco para asegurar el cumplimiento del nuevo orden. Los incas también asimilaron algunos aspectos de la cultura chimú, como la herencia de título de sus gobernadores, si bien no sus propiedades; la política de permitir a los gobernantes conquistados una cierta autonomía; la idea de tener agrupamientos de artistas extranjeros trabajando para el estado, y ciertas características del arte chimú. Los incas también mantenían registros de la cultura chimú, y gracias a estos, tenemos, si bien de manera escasa, información sobre sus reyes y sus principales dioses. Entre estos útlimos encontramos al dios creador Ai Apaec, el dios del mar Ni, y, quizás la deidad más importante del panteón chimú, la diosa lunar Si.</p>
+                                                    
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <p>Fuente: www.worldhistory.org</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -114,7 +142,7 @@
                     </section>
 
                     <!-- SECCION HISTORIA -->
-                    <section class="mainhistoria row">
+                    <section id="histo" class="mainhistoria row">
                         <div class="contenido container my-4 p-4 px-xl-5">
                             
                             <div class="titulo px-xl-4">
@@ -126,25 +154,24 @@
                                 <div class="hbloque1 px-xl-4 d-flex flex-column flex-xl-row align-items-center">
                                     <img class="col-xl-3 img-fluid" src="./img-museo/vista-muro-chan-chan-opt.jpg" alt="vista perspectiva de un muro grabado chan chan" height="300px">
                                     <div class="hbloque1__texto my-4 ps-xl-5 offset-xl-1">
-                                        <h4>Lorem, ipsum dolor sit amet consectetur adi pisicing elit. Ea culpa sed, earum et ipsum dolor</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nemo autem ipsam distinctio minima perspiciatis veniam, incidunt numquam? Nostrum magnam doloremque totam reprehenderit nulla ratione odio in libero, beatae tempora!</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam expedita tempora repellendus asperiores minus, libero harum ab sapiente repellat eos veniam, velit quas quibusdam aperiam saepe eveniet nisi esse soluta!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea culpa sed, earum et Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reiciendis maxime</p>
+                                        <h3>Chan Chan se ubica frente al mar, a mitad de camino entre el balneario de Huanchaco y la ciudad de Trujillo, en la costa norte del Perú</h3>
+                                        <p>Desde fines del intermedio temprano (600 d.C.), y comienzos del horizonte medio (700 d.C.) -fase Moche V- en la costa norte del Perú, surgen nuevos modelos de ciudades, donde la estructura principal no será únicamente una pirámide ceremonial, sino una gran cantidad de cuartos y edificios cercados por grandes muros («canchones»), que acompañan a ésta como la parte más importante del asentamiento.</p>
+                                        <p>Por su gran volumen y su antiguo prestigio de haber sido la capital de un importante y rico reino, Chan Chan ha estado presente en el interés de los viajeros e investigadores desde hace siglos. Sin embargo, hay que hacer notar que las menciones y referencias de este sitio en los documentos más antiguos, después de la conquista española, son escasos, o se refieren a él como una ruina.</p>
                                     </div>                                
                                 </div>
                                 
                                 <div class="hbloque2 col-xl-6 py-4 p-xl-5 m-xl-5 d-flex flex-column justify-content-center">
                                     <hr>
-                                    <h5>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, obcaecati ipsam quidem illo consequuntur ut, ab amet veniam optio pariatur, eveniet voluptas"</h5>
+                                    <h3>Es por eso que se postula, que tras la conquista Inca, Chan Chan (en un tiempo, rival del Cusco) fue saqueada y destruida (aproximadamente en el año 1470)</h3>
                                     <hr>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, provident iste reiciendis quasi animi quis illum, dolor doloremque repellendus</p>
+                                    <p>Cuando llegó Pizarro (1532) esta ciudad era sólo un pálido reflejo de su viejo esplendor, habitado por pocas personas de escasa importancia política y económica.</p>
                                 </div>
                                 
                                 <div class="shblock3 d-xl-flex flex-xl-column align-items-end">    
                                 <div class="hbloque3 col-xl-6 px-xl-4">
-                                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, volup tatibus accusamus? Aspe rio res accusamus sed corrupti dist inctio.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, provident iste reiciendis quasi animi quis illum, dolor doloremque repellendus natus quidem eligendi maiores labore quas voluptatibus, vitae cupiditate quisquam ab?</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, provident iste reiciendis quasi animi quis illum, dolor doloremque repellendus natus quidem eligendi maiores labore quas voluptatibus, vitae cupiditate quisquam ab?</p>
+                                    <h3>Durante la época del virreinato (1532 – 1821) Chan Chan fue objeto de múltiples saqueos y destrucciones, pues existía la creencia que entre sus muros y pirámides estaba escondido un gran tesoro en piezas de oro y plata.</h4>
+                                    <p>Y aunque no hay datos oficiales que lo respalden, existe la leyenda de que varias fortunas se originaron de esa manera. Recién en el siglo XIX, con el renacer de las ciencias, esta ciudad fue estudiada con interés académico, viajeros como Rivero, Tschudi , Hutchinson, Middendorf y Bandelier la dibujaron, mapearon y describieron, preguntándose por su origen y cómo habría sido la vida las personas que poblaron Chan Chan.</p>
+                                    <p>El siglo XX inaugura a la arqueología como ciencia, y los arqueólogos la hacen una de las principales fuentes de conocimiento del pasado peruano. Destacan las investigaciones de Bennet, Schaedel, Willey, Kosos, West, Mosley y Mackey.</p>
                                 </div>
                                 </div>
 
@@ -152,7 +179,7 @@
                     </section>
 
                     <!-- SECCION INFOGRAFIAS -->
-                    <section class="maininfog row">
+                    <section id="infog" class="maininfog row">
                         
                         <div class="contenido container my-4 p-4">
                             <div class="titulo px-xl-4">
@@ -173,8 +200,32 @@
                                             <div class="card-body" style=" height:12rem ;">
                                         
                                                 <div class="descripcion">
-                                                <h5 class="my-2">Mapa de Expansión Territorial</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
+                                                    <h4 class="my-2">Mapa de Expansión Territorial</h4>
+                                                    <p>Los sucesores del mítico fundador chimú, Tacaynamo se apoderaron los valles adyacentes a Chan Chan.</p>
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-1">
+                                                        <p>SABER MÁS</p>
+                                                        <i class="bi bi-arrow-right"></i>
+                                                    </button>
+                                                    <!-- modal -->
+                                                    <div class="modal fade" id="infog-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                <h4 class="modal-title" id="exampleModalLabel">Expansión Territorial</h4>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>La prosperidad inicial de los chimú fue en gran parte debida a destreza agrícola, ya que construyeron extensos sistemas de irrigación usando canales. Más tarde, sus exitosas campañas.</p>
+                                                                    
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <p>Fuente: www.worldhistory.org</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                         
                                             </div>
@@ -184,13 +235,43 @@
                                     <div class="carousel-item">
                                         <div class="card-wraper d-flex justify-content-center">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="vista de la expansion chimú en territorio peruano" style="height: 20rem; object-fit: cover;">
+                                                <img src="./img-museo/linea-de-tiempo.jpg" class="card-img-top" alt="vista de la expansion chimú en territorio peruano" style="height: 20rem; object-fit: cover;">
                                                 <div class="card-body" style="height:12rem ;">
                                     
-                                                <div>
-                                                    <h5 class="my-2">Línea de Tiempo Cultural</h5>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
-                                                </div>
+                                                    <div>
+                                                        <h4 class="my-2">Línea de Tiempo Cultural</h4>
+                                                        <p>Desarrollo temporal de las culturas peruanas en relación al reino Chimú.</p>
+                                                    </div>
+                                                    <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-2">
+                                                        <p>SABER MÁS</p>
+                                                        <i class="bi bi-arrow-right"></i>
+                                                    </button>
+                                                    <!-- modal -->
+                                                    <div class="modal fade" id="infog-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h4 class="modal-title" id="exampleModalLabel">Línea de Tiempo</h4>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Catorce mil años de culturas únicas precedieron a los Inka en los Andes. Cuatro, en particular, Chavín, Tiwanaku, Wari y Chimú, influyeron en las tradiciones de los Inka y sentaron las bases para el surgimiento del Imperio Inka y el sistema vial:</p>
+                                                                <h5>1000 a.C. 100 d.C.: CHAVÍN</h5>
+                                                                <p>La cultura Chavín fue la primera gran cultura unificadora de los Andes. Sus poblaciones, aunque dispersas—entre las cuales Chavín de Huantar fue la más numerosa—compartían un estilo característico de arte, arquitectura, cerámica y modo de vida, que influenció a otros grupos étnicos.</p>
+                                                                <h5>400 a 1000 d.C.: TIWANAKU</h5>
+                                                                <p>Ubicada cerca del lago Titicaca, la ciudad de Tiwanaku era el centro de una cultura cuya religión, arte y arquitectura ejercieron gran influencia en el sur de los Andes. A fin de fomentar el comercio y la distribución de recursos, los pueblos Aymara de Tiwanaku construyeron caminos que se extendían hasta la costa del Pacífico.</p>
+                                                                <h5>600 a 1100 d.C.: WARI</h5>
+                                                                <p>Los Wari construyeron un gran imperio. Se expandieron desde la sierra central del Perú hacia otros territorios con el fin de propagar su religión. Para ejercer control sobre las áreas remotas, los Wari establecieron centros provinciales, así como una extensa red vial.</p>
+                                                                <h5>1100 a 1400 d.C.: CHIMÚ</h5>
+                                                                <p>La muy bien organizada capital de los Chimú, Chan Chan, fue la ciudad más grande de su época en el hemisferio occidental. Los Chimú construyeron una red de caminos, canales y sistemas de irrigación que los ayudaron a expandirse a lo largo de la costa norte de Perú.</p>
+                                                                
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <p>Fuente: www.worldhistory.org</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
                                     
                                                 </div>
                                             </div>
@@ -199,13 +280,36 @@
                                     <div class="carousel-item">
                                         <div class="card-wraper d-flex justify-content-center">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./img-museo/mapa-expansion-chimu.png" class="card-img-top" alt="vista de la expansion chimú en territorio peruano" style="height: 20rem; object-fit: cover;">
+                                                <img src="./img-museo/mapa-organizacion-territorial.png" class="card-img-top" alt="vista de la expansion chimú en territorio peruano" style="height: 20rem; object-fit: cover;">
                                                 <div class="card-body" style="height:12rem ;">
                                     
-                                        <div>
-                                            <h5 class="my-2">Lorem ipsum dolor sit amet</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis, impedit esse quasi maiores libero modi repellat laboriosam.</p>
-                                        </div>
+                                                    <div>
+                                                        <h4 class="my-2">Organización Territorial</h4>
+                                                        <p>Los chimú se desarrollaron en el valle del río Moche, acabando en Trujillo central.</p>
+                                                    </div>
+                                                    <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-3">
+                                                        <p>SABER MÁS</p>
+                                                        <i class="bi bi-arrow-right"></i>
+                                                    </button>
+                                                    <!-- modal -->
+                                                    <div class="modal fade" id="infog-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h4 class="modal-title" id="exampleModalLabel">Organización Territorial</h4>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>El Reino Chimú se desarrolló en la franja costeña norte del actual Perú, entre el Océano Pacífico y las estribaciones occidentales de los Andes, en territorios donde siglos atrás existieron los mochicas y los lambayeques. Al igual que los mochicas, los chimú se desarrollaron en el valle del río Moche (al norte de Lima), al noreste de Huarmey acabando en Trujillo central, en el departamento de La Libertad. Limitaba por el sur con Carabayllo (Lima) y por el norte con el río Tumbes, esta región posee un conjunto de valles y tierras fértiles irrigados por los ríos que descienden desde las altas cumbres andinas. Aunque las condiciones climáticas en ciertas temporadas son muy drásticas, especialmente con la llegada del fenómeno de El Niño.</p>
+                                                                <p>La capital del reino, Chan Chan, contó con una extensión de 22 kilómetros cuadrados, ubicada próxima al mar, a una altitud media de 34 msnm, en el valle del río Moche antiguamente denominado valle de “Chimo” hoy valle de Moche, cerca de la actual ciudad de Trujillo, a 550 km al norte de Lima. Fue la capital, centro del poder político, económico, religioso y cultural está considerada como una de las urbes de adobe más grandes del mundo.</p>
+                                                                
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <p>Fuente: www.worldhistory.org</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
                                     
                                                 </div>
                                             </div>
@@ -235,9 +339,38 @@
                                                     </div>
                                                     <div class="col-xl-5">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Mapa de Expansión Territorial</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
-                                                            <p class="card-text d-none"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                            <h4 class="card-title">Mapa de Expansión Territorial</h4>
+                                                            <p class="card-text">Los sucesores del mítico fundador chimú, Tacaynamo se apoderaron los valles adyacentes a Chan Chan.</p>
+                                                            <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-xl-1">
+                                                                <p>SABER MÁS</p>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
+                                                            <!-- modal -->
+                                                            <div class="modal fade" id="infog-xl-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h4 class="modal-title" id="exampleModalLabel">Línea de Tiempo</h4>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <p>Catorce mil años de culturas únicas precedieron a los Inka en los Andes. Cuatro, en particular, Chavín, Tiwanaku, Wari y Chimú, influyeron en las tradiciones de los Inka y sentaron las bases para el surgimiento del Imperio Inka y el sistema vial:</p>
+                                                                        <h5>1000 a.C. 100 d.C.: CHAVÍN</h5>
+                                                                        <p>La cultura Chavín fue la primera gran cultura unificadora de los Andes. Sus poblaciones, aunque dispersas—entre las cuales Chavín de Huantar fue la más numerosa—compartían un estilo característico de arte, arquitectura, cerámica y modo de vida, que influenció a otros grupos étnicos.</p>
+                                                                        <h5>400 a 1000 d.C.: TIWANAKU</h5>
+                                                                        <p>Ubicada cerca del lago Titicaca, la ciudad de Tiwanaku era el centro de una cultura cuya religión, arte y arquitectura ejercieron gran influencia en el sur de los Andes. A fin de fomentar el comercio y la distribución de recursos, los pueblos Aymara de Tiwanaku construyeron caminos que se extendían hasta la costa del Pacífico.</p>
+                                                                        <h5>600 a 1100 d.C.: WARI</h5>
+                                                                        <p>Los Wari construyeron un gran imperio. Se expandieron desde la sierra central del Perú hacia otros territorios con el fin de propagar su religión. Para ejercer control sobre las áreas remotas, los Wari establecieron centros provinciales, así como una extensa red vial.</p>
+                                                                        <h5>1100 a 1400 d.C.: CHIMÚ</h5>
+                                                                        <p>La muy bien organizada capital de los Chimú, Chan Chan, fue la ciudad más grande de su época en el hemisferio occidental. Los Chimú construyeron una red de caminos, canales y sistemas de irrigación que los ayudaron a expandirse a lo largo de la costa norte de Perú.</p>
+                                                                        
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <p>Fuente: www.worldhistory.org</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -246,13 +379,42 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <img class="img-fluid h-100" src="./img-museo/mapa-expansion-chimu.png" alt="vista de la expansion chimú en territorio peruano">
+                                                        <img class="img-fluid h-100" src="./img-museo/linea-de-tiempo.jpg" alt="vista de la expansion chimú en territorio peruano">
                                                     </div>
                                                     <div class="col-xl-5">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Linea de Tiempo Cultural</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
-                                                            <p class="card-text d-none"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                            <h5 class="card-title">Linea de Tiempo Cultural</h4>
+                                                            <p class="card-text">Desarrollo temporal de las culturas peruanas en relación al reino Chimú.</p>
+                                                            <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-xl-2">
+                                                                <p>SABER MÁS</p>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
+                                                            <!-- modal -->
+                                                            <div class="modal fade" id="infog-xl-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h4 class="modal-title" id="exampleModalLabel">Línea de Tiempo</h4>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <p>Catorce mil años de culturas únicas precedieron a los Inka en los Andes. Cuatro, en particular, Chavín, Tiwanaku, Wari y Chimú, influyeron en las tradiciones de los Inka y sentaron las bases para el surgimiento del Imperio Inka y el sistema vial:</p>
+                                                                        <h5>1000 a.C. 100 d.C.: CHAVÍN</h5>
+                                                                        <p>La cultura Chavín fue la primera gran cultura unificadora de los Andes. Sus poblaciones, aunque dispersas—entre las cuales Chavín de Huantar fue la más numerosa—compartían un estilo característico de arte, arquitectura, cerámica y modo de vida, que influenció a otros grupos étnicos.</p>
+                                                                        <h5>400 a 1000 d.C.: TIWANAKU</h5>
+                                                                        <p>Ubicada cerca del lago Titicaca, la ciudad de Tiwanaku era el centro de una cultura cuya religión, arte y arquitectura ejercieron gran influencia en el sur de los Andes. A fin de fomentar el comercio y la distribución de recursos, los pueblos Aymara de Tiwanaku construyeron caminos que se extendían hasta la costa del Pacífico.</p>
+                                                                        <h5>600 a 1100 d.C.: WARI</h5>
+                                                                        <p>Los Wari construyeron un gran imperio. Se expandieron desde la sierra central del Perú hacia otros territorios con el fin de propagar su religión. Para ejercer control sobre las áreas remotas, los Wari establecieron centros provinciales, así como una extensa red vial.</p>
+                                                                        <h5>1100 a 1400 d.C.: CHIMÚ</h5>
+                                                                        <p>La muy bien organizada capital de los Chimú, Chan Chan, fue la ciudad más grande de su época en el hemisferio occidental. Los Chimú construyeron una red de caminos, canales y sistemas de irrigación que los ayudaron a expandirse a lo largo de la costa norte de Perú.</p>
+                                                                        
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <p>Fuente: www.worldhistory.org</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -266,13 +428,39 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <img class="img-fluid h-100" src="./img-museo/mapa-expansion-chimu.png" alt="vista de la expansion chimú en territorio peruano">
+                                                        <img class="img-fluid h-100" src="./img-museo/mapa-organizacion-territorial.png" alt="vista de la expansion chimú en territorio peruano">
                                                     </div>
                                                     <div class="col-xl-5">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
-                                                            <p class="card-text d-none"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                            <h4 class="card-title">Organización Territorial</h4>
+                                                            <p class="card-text">Los chimú se desarrollaron en el valle del río Moche, al noreste de Huarmey acabando en Trujillo central.</p>
+                                                            <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-xl-3">
+                                                                <p>SABER MÁS</p>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
+                                                            <!-- modal -->
+                                                            <div class="modal fade" id="infog-xl-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h4 class="modal-title" id="exampleModalLabel">Organización Territorial</h4>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <p>Chan Chan: La capital del reino.</p>
+                                                                        <p>Farfán. Palacio provincial norteño, en el valle de Zaña, Lambayeque.</p>
+                                                                        <p>Manchan. Centro provincial sureño, en el valle de Casma, Ancash, que muestra una fusión e interacción estilística y arquitectónica con el estilo Casma, antecesor del estado Chimú en este valle.</p>
+                                                                        <p>Pakatnamú. De origen moche que se levanta en el valle de Jequetepeque, en Pacasmayo, en el departamento de La Libertad</p>
+                                                                        <p>Apurlec. Edificada entre los valles de Motupe y La Leche en el departamento de Lambayeque.</p>
+                                                                        <p>Paramonga En el valle del río Fortaleza, cerca de Pativilca en el departamento de Lima.</p>
+                                                                        
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <p>Fuente: www.worldhistory.org</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -281,13 +469,38 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <img class="img-fluid h-100" src="./img-museo/mapa-expansion-chimu.png" alt="vista de la expansion chimú en territorio peruano">
+                                                        <img class="img-fluid h-100" src="./img-museo/mapa-guerra-chimú-inca.png" alt="vista de la expansion chimú en territorio peruano">
                                                     </div>
                                                     <div class="col-xl-5">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
-                                                            <p class="card-text d-none"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                            <h4 class="card-title">Guerra Chimú Inca</h4>
+                                                            <p class="card-text">Conflicto que se libró entre el Reino Chimú y los incas, desarrollado por las políticas expansionistas de ambas potencias emergentes </p>
+                                                            <button type="button" class="btn btn-link d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#infog-4">
+                                                                <p>SABER MÁS</p>
+                                                                <i class="bi bi-arrow-right"></i>
+                                                            </button>
+                                                            <!-- modal -->
+                                                            <div class="modal fade" id="infog-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h4 class="modal-title" id="exampleModalLabel">Guerra Chimú Inca</h4>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        
+                                                                        <h5>En el libro VI de los Comentarios reales de los incas, del Inca Garcilaso de la Vega, se narra la conquista incaica del reino Chimú (Capítulo XXXII: «Van a conquistar al rey Chimú, y la guerra cruel que se hacen» y Capítulo XXXIII: «Penitencia y aflicciones del Gran Chimú, y como se rinde este»)</h5>
+                                                                        <p>Garcilaso sitúa esta conquista bajo el reinado del Inca Pachacútec, con quien empezó la expansión imperial incaica. Las fuerzas incas estuvieron comandadas por el príncipe Inca Yupanqui y contaron con el apoyo de los yungas de Chuquimancu y Cuismancu (reyezuelos de los valles del actual departamento de Lima), antiguos enemigos de los chimúes. La guerra fue larga y sangrienta. Con grandes esfuerzos los incas avanzaron por Parmunca (Paramonga) y Santa, y no pudiendo doblegar la resistencia del enemigo, el príncipe inca pidió más refuerzos, que le llegaron en número de 20.000 soldados. </p>
+                                                                        <p>El Gran Chimú (Minchancaman), viendo que era imposible resistir más y presionado por sus propios súbditos, se rindió, sometiéndose en vasallaje a los incas. Cuenta Garcilaso que en memoria de esta conquista, los incas elevaron la fortaleza de Paramonga (aunque esta es en realidad pre-inca).</p>
+                                                                        <p>La conquista inca debió ocurrir hacia 1470. Los incas trasladaron al Cuzco los tesoros del Gran Chimú así como a los reputados orfebres chimúes, para que adornaran el Coricancha o Templo del Sol.</p>
+                                                                        
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <p>Fuente: www.worldhistory.org</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -314,7 +527,7 @@
                     </section>
 
                     <!-- SECCION EXHIBICIÓN -->
-                    <section class="mainexhib row">
+                    <section id="exhib" class="mainexhib row">
                         <div class="contenido container my-4 p-4">
                             <div class="titulo px-xl-4">
                                 <h2>EXHIBICIONES</h2>
@@ -325,39 +538,40 @@
 
                             <div id="carruselexhmobile" class="carousel slide d-sm-none my-5" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">                            
-                                            <div class="card-wraper d-flex justify-content-center">    
-                                                <div class="card" style="width: 18rem;">
-                                                <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
-                                                <div class="card-body" style=" height:12rem ;">
+                                    <div class="carousel-item active">
+                                        <div class="card-wraper d-flex justify-content-center">    
+                                            <div class="card" style="width: 18rem;">
+                                                    <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
+                                                    <div class="card-body" style=" height:12rem ;">
                                                     
                                                         <div>
-                                                            <h5 class="my-2">Mapa de Expansión Territorial</h5>
-                                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
+                                                            <h4 class="my-2">Cerámica Chimú</h4>
+                                                            <p>Sala de exhibiciones de cerámica oscura, principalmente zoomorfa.</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
                                                             </button>
                                                         </div>
+                                                            
+                                                    </div>
                                                         
                                                     
                                                 </div>
-                                                </div>
                                             </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="card-wraper d-flex justify-content-center">
                                             <div class="card" style="width: 18rem;">
-                                            <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
+                                            <img src="./img-museo/pieza-mascara.jpg" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
                                             <div class="card-body" style="height:12rem ;">
                                                 
                                                     <div>
-                                                        <h6 class="my-2">Línea de Tiempo Cultural</h6>
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
-                                                            <button type="button" class="btn btn-link d-flex">
-                                                                <P>VER MÁS</P>
-                                                                <i class="bi bi-arrow-right"></i>
-                                                            </button>
+                                                        <h4 class="my-2">Piezas de orfebrería</h4>
+                                                        <p>Exposición de piezas moldeadas en metales preciosos, destacando el oro repujado.</p>
+                                                        <button type="button" class="btn btn-link d-flex">
+                                                            <P>VER MÁS</P>
+                                                            <i class="bi bi-arrow-right"></i>
+                                                        </button>
                                                     </div>
                                                 
                                             </div>
@@ -367,12 +581,12 @@
                                     <div class="carousel-item">
                                         <div class="card-wraper d-flex justify-content-center">
                                             <div class="card" style="width: 18rem;">
-                                            <img src="./img-museo/pieza-ceramica-ave.png" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
+                                            <img src="./img-museo/pieza-tejido.jpg" class="card-img-top" alt="vista de un huaco de ave" style="height: 20rem; object-fit: cover;">
                                             <div class="card-body" style="height:12rem ;">
                                                 
                                                     <div>
-                                                        <h6 class="my-2">Lorem ipsum dolor sit amet</h6>
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam omnis tenetur debitis.</p>
+                                                        <h4 class="my-2">Tejidos Ceremoniales</h4>
+                                                        <p>Muestra de más de 150 tejidos ceremoniales diferentes</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
@@ -382,18 +596,18 @@
                                             </div>
                                             </div>
                                         </div>
+                                    </div> 
                                     </div>
-                                    
-                                </div>    
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carruselexhmobile" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carruselexhmobile" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselexhmobile" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carruselexhmobile" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>    
+                            </div>    
+                        </div>
             
                             <!-- CARRUSEL PANTALLAS GRANDES -->
                             <div id="carruselexhxl" class="carousel slide align-items-center slide d-none d-sm-block my-xl-5" data-bs-ride="carousel">
@@ -410,8 +624,8 @@
                                                     </div>
                                                     <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
+                                                            <h4 class="card-title">Cerámica Chimú</h4>
+                                                            <p class="card-text">Sala de exhibiciones de cerámica oscura, principalmente zoomorfa.</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
@@ -425,13 +639,13 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
-                                                        <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="vista de un huaco de ave">
+                                                        
+                                                        <img class="img-fluid h-100" src="./img-museo/pieza-mascara.jpg" alt="vista de un huaco de ave">
                                                     </div>
                                                     <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
+                                                            <h4 class="card-title">Piezas de orfebrería</h4>
+                                                            <p class="card-text">Exposición de piezas moldeadas en metales preciosos, destacando el oro repujado.</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
@@ -450,13 +664,12 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
-                                                        <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="vista de un huaco de ave">
+                                                        <img class="img-fluid h-100" src="./img-museo/pieza-tejido.jpg" alt="vista de un huaco de ave">
                                                     </div>
                                                     <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
+                                                            <h4 class="card-title">Tejidos Ceremoniales</h4>
+                                                            <p class="card-text">Muestra de más de 150 tejidos ceremoniales diferentes</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
@@ -470,13 +683,12 @@
                                             <div class="card mb-3" style="max-width: 540px">
                                                 <div class="row g-0">
                                                     <div class="col-xl-7">
-                                                        <h3 class="col-xl-7 card-img-overlay d-flex align-items-end">Lorem, ipsum dolor.</h3>
-                                                        <img class="img-fluid h-100" src="./img-museo/pieza-ceramica-ave.png" alt="vista de un huaco de ave">
+                                                        <img class="img-fluid h-90" src="./img-museo/pieza-huaco.jpg" alt="vista de un huaco de ave">
                                                     </div>
                                                     <div class="col-xl-5 d-flex align-items-center">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius explicabo unde alias suscipit sapiente!</p>
+                                                            <h4 class="card-title">Cerámicos II</h4>
+                                                            <p class="card-text">Muestra de piezas de cerámica negra que muestran oficios</p>
                                                             <button type="button" class="btn btn-link d-flex">
                                                                 <P>VER MÁS</P>
                                                                 <i class="bi bi-arrow-right"></i>
@@ -539,12 +751,12 @@
                 
                 <div class="navfoot container py-4 mb-xl-5">
 
-                    <div class="row my-4 blinks d-xl-flex justify-content-center px-xl-5">
+                    <div class="blinks row my-4 d-xl-flex justify-content-center px-xl-5">
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./index.html">MUSEO</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/tours.html">TOURS</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="/pages/actividades.html">ACTIVIDADES</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/faq.html">FAQ</a>
-                        <a class="lfcontacto col-12 col-xl-2 d-xl-flex justify-content-center" href="./pages/contacto.html">CONTACTO</a>
+                        <a class="lfcontacto col-12 col-xl-2 d-xl-flex justify-content-center align-items-center" href="./pages/contacto.html">CONTACTO</a>
                     </div>
 
                     <div class="fdatos container mt-5">
@@ -552,20 +764,20 @@
                         <div class="fsecciones row">
                             <article class="fs-redes col-12 col-xl-3 my-4 d-xl-flex flex-column justify-content-center">
 
-                                <h3>Redes</h3>
-                                <div class="iconos">
-                                    <i class="bi bi-instagram"></i>
-                                    <i class="bi bi-facebook"></i>
-                                    <i class="bi bi-twitter"></i>
+                                <h5>Redes</h5>
+                                <div class="iconos d-flex justify-content-center">
+                                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
                                 </div>
                                 
             
                             </article>
             
-                            <article class="fs-sus col-12 col-xl-5 my-4">
+                            <article class="fs-sus col-12 col-xl-5 my-4 px-xl-5">
             
-                                <div class="fs-txt">
-                                    <h3> Suscríbete</h3>
+                                <div class="fs-txt px-xl-4">
+                                    <h5> Suscríbete</h5>
                                     <P>Para recibir más información y novedades déjanos tu correo</P>
                                 </div>
             
@@ -581,7 +793,7 @@
                                 <div class="f-logo d-xl-flex flex-column align-items-center">
                                     <img src="./img-museo/logo-chan-chan-blanco.png" alt="logo del museo" width="150">
                                 </div>
-                                <p>museochanchan@gob.pe <br>+ 11 111 111 111 <br>Neque ad commodi pariatur quis tempore</p>
+                                <p>museochanchan@gob.pe <br>+ (044) 234862 <br>VWXM+XPM, Av. Mansiche, Huanchaco 13011</p>
             
                             </article>
                         </div>

@@ -42,8 +42,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="../index.html">Museo</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./tours.html">Tours</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active d-flex align-items-center" href="./tours.html" role="button" data-bs-toggle="dropdown">
+                                        <h1>Tours</h1>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#ubic">Ubicación</a></li>
+                                        <li><a class="dropdown-item" href="#tarif">Tarifas</a></li>
+                                        <li><a class="dropdown-item" href="#opin">Opiniones</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./actividades.html">Actividades </a>
@@ -53,7 +60,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <div class="contacto">
-                                        <a class="nav-link link-light" href="./contacto.html">Contacto</a>
+                                        <a class="btn btn-primary" href="./contacto.html" role="button">Contacto</a>
                                     </div>
                                 </li>
                             </ul>
@@ -63,7 +70,7 @@
 
             </header>
 
-            <section class="ubicacion row">
+            <section id="ubic" class="ubicacion row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="stu-titulo px-xl-4">
                         <h2>UBICACIÓN <br> Y HORARIOS</h2>
@@ -124,7 +131,7 @@
                 </div>
             </section>
 
-            <section class="tarifas row">
+            <section id="tarif" class="tarifas row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="stt-titulo px-xl-4">
                         <h2>TARIFAS</h2>
@@ -148,12 +155,12 @@
                             <tbody class="my-4">
                                 <tr class="d-flex justify-content-center">
                                     <td class="px-4 my-4">Adultos</td>
-                                    <td class="px-4 my-4">S/.15</td>
+                                    <td class="px-4 my-4">S/.10</td>
                                 </tr>
                 
                                 <tr class="d-flex justify-content-center">
                                     <td class="px-4 my-4">Niños</td>
-                                    <td class="px-4 my-4">S/.5</td>
+                                    <td class="px-4 my-4">S/.3</td>
                                 </tr>
                 
                             </tbody>
@@ -190,7 +197,7 @@
                         <table class="tarifas__tabla3 d-flex flex-column justify-content-center">
                             <thead class="d-flex flex-column justify-content-center">
                                 <tr class="d-flex flex-column justify-content-center">
-                                    <th class="tabla1_categ" colspan="2">EXTRAS</th>
+                                    <th class="tabla1_categ" colspan="2">EXTRAS *</th>
                                 </tr>
                 
                                 <tr class="d-flex justify-content-center mt-4">
@@ -202,12 +209,12 @@
                             <tbody class="my-4">
                                 <tr class="d-flex justify-content-center">
                                     <td class="px-4 my-4">Adultos</td>
-                                    <td class="px-4 my-4">S/.15</td>
+                                    <td class="px-4 my-4">S/.5</td>
                                 </tr>
                 
                                 <tr class="d-flex justify-content-center">
                                     <td class="px-4 my-4">Niños</td>
-                                    <td class="px-4 my-4">S/.5</td>
+                                    <td class="px-4 my-4">S/.1</td>
                                 </tr>
                 
                             </tbody>
@@ -217,7 +224,7 @@
                 </div>
             </section>
 
-            <section class="opiniones row">
+            <section id="opin" class="opiniones row">
                 <div class="container my-4 p-4 px-xl-5">
                     <div class="sto-titulo px-xl-4">
                         <h2>OPINIONES</h2>
@@ -225,8 +232,8 @@
                     </div>
 
                     <div class="row my-5 d-xl-flex justify-content-center">
-                        <div class="opiniones_card col-12 col-xl-4 m-xl-2 d-xl-flex flex-column justify-content-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-1 d-xl-flex flex-column justify-content-center">
+                        <p>El museo es genial, siempre trayendo muestras aparte que tienen actividades dentro del museo, se dictan clases etc, es muy bueno para visitar.</p>
                         
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -236,11 +243,11 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
         
-                        <h3>Lorem Ipsum Dolor.</h3>
+                        <h3>Carlos R.</h3>
                         </div>
                             
-                        <div class="opiniones_card col-12 col-xl-4 m-xl-2 d-xl-flex flex-column justify-content-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-1 d-xl-flex flex-column justify-content-center">
+                        <p>Primera vez que lo visito. objetos muy valiosos de nuestra cultura. todo super ordenado y limpio. y la visita guiada con la guía ana fue genial. felicitaciones.</p>
                         
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -250,11 +257,11 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
         
-                        <h3>Lorem Ipsum Dolor.</h3>
+                        <h3>Juan P.</h3>
                         </div>
                             
-                        <div class="opiniones_card col-12 col-xl-4 m-xl-2 d-xl-flex flex-column justify-content-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
+                        <div class="opiniones_card col-12 col-xl-4 m-xl-1 d-xl-flex flex-column justify-content-center">
+                        <p>Me gustó más el área de las pinturas y su historia les recomiendo más que todo a los próximos visitantes que hagan su recorrido con un guía ya que muchas artesanías cuentan más de lo que se puede ver y los guías están capacitados para darnos una buena experiencia.</p>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -262,7 +269,7 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                        <h3>Lorem Ipsum Dolor.</h3>
+                        <h3>José S.</h3>
                         </div>
                     </div>
 
@@ -282,7 +289,7 @@
                 
                 <div class="navfoot container py-4">
 
-                    <div class="row my-4 blinks d-xl-flex justify-content-center px-xl-5">
+                    <div class="blinks row my-4 d-xl-flex justify-content-center px-xl-5">
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="../index.html">MUSEO</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./tours.html">TOURS</a>
                         <a class="col-12 col-xl-2 d-xl-flex justify-content-center" href="./actividades.html">ACTIVIDADES</a>
@@ -295,20 +302,20 @@
                         <div class="fsecciones row">
                             <article class="fs-redes col-12 col-xl-3 my-4 d-xl-flex flex-column justify-content-center">
 
-                                <h3>Redes</h3>
-                                <div class="iconos">
-                                    <i class="bi bi-instagram"></i>
-                                    <i class="bi bi-facebook"></i>
-                                    <i class="bi bi-twitter"></i>
+                                <h5>Redes</h5>
+                                <div class="iconos d-flex">
+                                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
                                 </div>
                                 
             
                             </article>
             
-                            <article class="fs-sus col-12 col-xl-5 my-4">
+                            <article class="fs-sus col-12 col-xl-5 my-4 px-xl-5">
             
-                                <div class="fs-txt">
-                                    <h4> Suscríbete</h4>
+                                <div class="fs-txt px-xl-4">
+                                    <h5> Suscríbete</h5>
                                     <P>Para recibir más información y novedades déjanos tu correo</P>
                                 </div>
             
@@ -324,7 +331,7 @@
                                 <div class="f-logo d-xl-flex flex-column align-items-center">
                                     <img src="../img-museo/logo-chan-chan-blanco.png" alt="logo insitución" width="150">
                                 </div>
-                                <p>museochanchan@gob.pe <br>+ 11 111 111 111 <br>Neque ad commodi pariatur quis tempore</p>
+                                <p>museochanchan@gob.pe <br>+ (044) 234862 <br>VWXM+XPM, Av. Mansiche, Huanchaco 13011</p>
             
                             </article>
                         </div>

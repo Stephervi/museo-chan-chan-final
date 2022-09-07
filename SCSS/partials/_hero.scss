@@ -18,21 +18,18 @@
     .hero {
       display: flex;
     }
-    .htexto {
-      @include large {
-        padding-bottom: 64px;
-      }      
-      h1 {
+    .htexto {     
+      h6 {
         font-weight: bolder;
         @include large {
           font-size: 4rem;
-          padding-left: 250px;
+          padding-left: 30px;
         }
       }
       p {
         font-weight: lighter;
         @include large {
-          padding-left: 250px;
+          padding-left: 30px;
         }
       }
     }

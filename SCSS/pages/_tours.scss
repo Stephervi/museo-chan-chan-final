@@ -1,10 +1,6 @@
 .ubicacion {
     background-color: $color-rojo;
     color: $blanco;
-    @include large {
-      padding-left: 250px;
-      padding-right: 250px;
-    }
     .stu-titulo {
       h2 {
         font-weight: bold;
@@ -36,10 +32,6 @@
   
   
   .tarifas {
-    @include large {
-      padding-left: 250px;
-      padding-right: 250px;
-    }
     h2 {
       font-weight: bolder;
       color:$color-rojo;
@@ -100,10 +92,6 @@
   
   .opiniones {
     background-color: $negro;
-    @include large {
-      padding-left: 250px;
-      padding-right: 250px;
-    }
     h2 {
       font-weight: bold;
       color: $blanco;
@@ -119,6 +107,9 @@
       background-color: $blanco;
       margin-bottom: 42px;
       padding: 32px;
+      @include large {
+        width: 360px;
+      }
       p {
         text-align: justify;
       }
@@ -131,10 +122,6 @@
       h3 {
         font-weight: bold;
         text-align: center;
-      }
-      @include large {
-        width: 20vw;
-        height: 350px;
       }
     }
   }
