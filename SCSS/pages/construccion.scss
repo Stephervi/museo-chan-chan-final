@@ -1,0 +1,41 @@
+#constru {
+    text-align: center;
+    height: 90vh;
+    background-image: url("../../img-museo/vista-muro-chan-chan-opt.jpg");
+    background-color: rgba(255, 255, 255, 0.77);
+    background-blend-mode: overlay;
+    img {
+        margin: 16px 0px;
+    }
+    h1 {
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: $color-rojo;
+        @include large {
+            font-size: 4rem;
+        }
+    }
+    p {
+        @include large {
+            font-size: 1.3rem;
+        }
+    }
+    button {
+        width: 80vw;
+        font-size: 12px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        background-color: $color-rojo;
+        border-radius: 4px ;
+        padding: 8px;
+        margin-top: 16px;
+        @include large {
+            width: 25vw;
+            font-size: 0.9rem;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $blanco;
+    }
+}

@@ -9,6 +9,9 @@
       h2 {
         font-weight: bolder;
         color: $color-rojo;
+        @include xlarge {
+          margin-left: 220px;
+        }
       }
       hr {
         width: 30vw;
@@ -16,6 +19,9 @@
         @include large {
           width: 15vw;
           background-color: $color-rojo;
+        }
+        @include xlarge {
+          margin-left: 220px;
         }
       }
       h3 {
@@ -25,9 +31,18 @@
         @include large {
           margin-bottom: 24px;
         }
+        @include xlarge {
+          font-size: 1.7rem;
+          padding-left: 150px;
+          padding-right: 150px;
+        }
       }
       p {
         text-align: justify;
+        @include xlarge {
+          margin-right: 220px;
+          font-size: 1.2rem;
+        }
       }
       .px-xl-4 {
         @include large {
@@ -37,6 +52,45 @@
       }
       .btn {
         padding-left: 0px;
+        p {
+          margin: 0px;
+        }
+        @include xlarge {
+          margin-right: 220px;
+        }
+      }
+      
+      .modal-dialog {
+        @include large {
+          width: 90vw;
+          margin-right: 0px;
+          margin-left: 60px;
+          margin-top: 160px;
+        }
+        
+        .modal-content {
+          @include large {
+          width: 90vw;
+          }
+          background-color: $color-rojo;
+          color: $blanco;
+          p {
+            font-weight: lighter;
+            letter-spacing: 1px;
+            @include xlarge {
+              margin-left: 90px;
+              margin-right: 90px;
+            }
+          }
+          .btn-close {
+            background-color: $blanco;
+          }
+          .modal-body {
+            background-color: $blanco;
+            color: $negro-rojizo;
+            padding: 40px;
+          }
+        }
       }
     }
   }
@@ -54,9 +108,18 @@
       padding-right: 20px;
     }
     .contenido {
+      .shcontenido {
+        @include xlarge {
+          padding-left: 220px;
+          padding-right: 220px;
+        }
+      }
       h2 {
         font-weight: bold;
         color: $blanco;
+        @include xlarge {
+          margin-left: 220px;
+        }
       }
       .titulo {
         hr {
@@ -64,6 +127,9 @@
           border: 3px solid $blanco;
           @include large {
             width: 10vw;
+          }
+          @include xlarge {
+            margin-left: 220px;
           }
         }
       }
@@ -74,6 +140,7 @@
           width: 400px;
         }
       }
+      
       .hbloque1__texto {
         text-align: justify;
         h3 {
@@ -138,21 +205,37 @@
   
   .maininfog {
     background-color: $gris-oscuro;
-    
     .contenido {
       .titulo {
         h2 {
           font-weight: bold;
           color: $blanco;
+          @include xlarge {
+            padding-left: 220px;
+            padding-right: 220px;
+          }
         }
         hr {
           width: 30vw;
           border: 3px solid $blanco;
           @include large {
-            width: 15vw;
+            width: 10vw;
+          }
+          @include xlarge {
+            width: 10vw;
+            margin-left: 220px;
           }
         }
       }
+      @include xlarge {
+        #carruselinfxl {
+          padding: 0px 100px;
+          .carousel-inner {
+            padding: 50px 150px;
+          }
+        }
+      }
+      
     }
     h4 {
       font-weight: bold;
@@ -175,6 +258,39 @@
       object-position: center;
       filter: brightness(0.5);
     }
+    
+    .modal-dialog {
+      align-items: center;
+      justify-content: center;
+      margin-top: 130px;
+      @include large {
+        margin-right: 0px;
+        margin-left: 90px;
+      }
+      
+      .modal-content {
+        background-color: $negro-rojizo;
+        color: $blanco;
+        font-weight: lighter;
+        @include large {
+          width: 85vw;
+        }
+      .btn-close {
+        background-color: $blanco;
+      }
+      .modal-body {
+        background-color: $blanco;
+        color: $negro-rojizo;
+        padding: 30px;
+        h5 {
+          text-align: justify;
+        }
+        @include xlarge {
+          padding: 50px 90px;
+        }
+      }
+      }
+    }  
   }
   
   
@@ -186,12 +302,19 @@
         h2 {
           font-weight: bold;
           color:$blanco;
+          @include xlarge {
+            margin-left: 220px;
+          }
         }
         hr {
           width: 30vw;
           border: 3px solid $blanco;
           @include large {
             width: 18vw;
+          }
+          @include xlarge {
+            margin-left: 220px;
+            width: 10vw;
           }
         }
       }
@@ -210,6 +333,10 @@
     }
     button {
       color: $blanco;
+      a {
+        color: $blanco;
+        text-decoration: none;
+      }
     }
     .card {
       background-color: $negro-rojizo;
@@ -226,5 +353,19 @@
         object-fit: cover;
         object-position: center;
       }
+    }
+    @include xlarge {
+      #carruselexhxl {
+        padding: 0px 200px;
+        carousel-inner {
+          padding: 50px 200px;
+        }
+      }
+    }
+  }
+
+  .maininst {
+    @include xlarge {
+      padding: 0px 220px;
     }
   }

@@ -9,4 +9,23 @@
             text-align: center;
         }
     }
+    @include xlarge {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    @include xlarge {
+        padding-left: 200px;
+        .formulario {
+            margin-right: 220px;
+            .form-check {
+                label {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }

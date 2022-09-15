@@ -11,4 +11,14 @@
         width: 15vw;
       }
     }
+    #faqacordeon {
+      button.accordion-button {
+          color: $color-rojo !important;
+          font-weight: bold;
+      }
+    }
+    @include xlarge {
+      margin-left: 220px;
+      margin-right: 220px;
+    }
   }

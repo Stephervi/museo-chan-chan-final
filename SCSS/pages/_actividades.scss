@@ -3,12 +3,18 @@
     h2 {
       font-weight: bold;
       color: $blanco;
+      @include xlarge {
+        margin-left: 220px;
+      }
     }
     hr {
       width: 30vw;
       border: 3px solid $blanco;
       @include large {
         width: 10vw;
+      }
+      @include xlarge {
+        margin-left: 220px;
       }
     }
     h3 {
@@ -27,6 +33,20 @@
     span {
       background-color: #2a282835;
     }
+    @include xlarge {
+      .carousel-inner {
+        padding-left: 270px;
+        padding-right: 270px;
+      }
+      
+      .carousel-control-next {
+          justify-content: start;
+        }
+      .carousel-control-prev {
+          justify-content: end;
+        }
+      
+    }
   }
 
   
@@ -34,6 +54,7 @@
     h2 {
       font-weight: bolder;
       color: $color-rojo;
+      
     }
     hr {
       width: 30vw;
@@ -58,5 +79,9 @@
         }
       }
       
+    }
+    @include xlarge {
+      margin-left: 230px;
+      margin-right: 230px;
     }
   }

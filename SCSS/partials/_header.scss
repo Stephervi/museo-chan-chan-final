@@ -7,7 +7,10 @@ header {
         h1 {
           font-size: 16px;
           font-weight: bolder;
-          margin: 16px;
+          margin: 0px;
+          @include xlarge {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -28,6 +31,14 @@ header {
     }
     @include large {
       background-color: $blanco;
+      .dropdown-item {
+        width: 150px;
+        text-align: center;
+        &:hover {
+          background-color: $melon;
+          color: $blanco !important;
+        }
+      }
       li {
         a {
           color: $negro !important;
@@ -35,7 +46,7 @@ header {
           &:hover {
             background-color: #e9c7c7;
             border-radius: 5px;
-            transition: 0.2s;
+            transition: 0.5s;
           }
         }
       }
@@ -47,7 +58,13 @@ header {
       }
       img {
         filter: invert(100%);
+        @include xlarge {
+          width: 200px;
+        }
       }
+    }
+    @include xlarge {
+      font-size: 20px;
     }
   }
   

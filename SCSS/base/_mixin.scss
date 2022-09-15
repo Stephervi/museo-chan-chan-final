@@ -20,5 +20,11 @@
     }
 };
 
+@mixin xlarge {
+    @media (min-width: 1400px) {
+        @content
+    }
+};
+
 
 // TITULOS SECCION 

@@ -15,6 +15,9 @@
       text-align: start;
       font-size: 1.5rem;
     }
+    @include xlarge {
+      align-items: center;
+    }
     .hero {
       display: flex;
     }
@@ -25,11 +28,17 @@
           font-size: 4rem;
           padding-left: 30px;
         }
+        @include xlarge {
+          padding-left: 240px;
+        }
       }
       p {
         font-weight: lighter;
         @include large {
           padding-left: 30px;
+        }
+        @include xlarge {
+          padding-left: 240px;
         }
       }
     }
