@@ -1,6 +1,6 @@
 .shero {
     height: 90vh;
-    background-image: url("../../img-museo/img-portada-s-opt.jpg");
+    background-image: url("../../img-museo/img-hero-portada-s-opt.jpg");
     background-color: rgba(0, 0, 0, 0.786);
     background-blend-mode: multiply;
     background-size: cover;
@@ -10,7 +10,7 @@
     text-align: center;
     padding-bottom: 60px;
     @include large {
-      background-image: url("../../img-museo/img-portada-xl-opt.jpg");
+      background-image: url("../../img-museo/img-portada-hero-xl-opt.jpg");
       background-blend-mode: normal;
       text-align: start;
       font-size: 1.5rem;
