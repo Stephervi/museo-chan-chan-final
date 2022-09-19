@@ -735,6 +735,8 @@ html {
   background-image: url("../../img-museo/vista-muro-chan-chan-opt.jpg");
   background-color: rgba(255, 255, 255, 0.77);
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #constru img {
   margin: 16px 0px;
